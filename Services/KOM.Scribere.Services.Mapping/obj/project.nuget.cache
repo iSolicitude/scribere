@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ySPx2SPg1I96xxoHbBPS55gI0liALTAcmWGEBctrI5IXqQ8SXYD+Oqdh4qpEodR+p2yWWY6FrZrFfM6OWiIpKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Mapping\\KOM.Scribere.Services.Mapping.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

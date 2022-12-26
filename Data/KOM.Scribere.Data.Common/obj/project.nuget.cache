@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3ekY8axO1ESCuM9W6IGkcqd1JPmOUF7LRF9C6Fq/3QDJcBXG15Szp1jybabTsrPGiPf/lyep9YCOmVuDZJpxeg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Common\\KOM.Scribere.Data.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

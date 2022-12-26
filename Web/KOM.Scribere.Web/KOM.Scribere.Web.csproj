@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <UserSecretsId>aspnet-KOM.Scribere-BBB373B5-EF3F-4DBB-B8AA-7152CEC275BF</UserSecretsId>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="..\..\stylecop.json" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<InternalsVisibleTo Include="KOM.Scribere.Web.Tests" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CloudinaryDotNet" Version="1.20.0" />
+    <PackageReference Include="LigerShark.WebOptimizer.Core" Version="3.0.372" />
+    <PackageReference Include="LigerShark.WebOptimizer.Sass" Version="3.0.91" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SyndicationFeed.ReaderWriter" Version="1.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.1" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.1" />
+    <PackageReference Include="OpenAI.Net" Version="1.0.4" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    <PackageReference Include="WebEssentials.AspNetCore.OutputCaching" Version="1.0.43" />
+    <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.65" />
+    <PackageReference Include="WebEssentials.AspNetCore.StaticFilesWithCache" Version="1.0.3" />
+    <PackageReference Include="WebMarkupMin.AspNetCore7" Version="2.13.5" />
+    <PackageReference Include="WilderMinds.MetaWeblog" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\KOM.Scribere.Common\KOM.Scribere.Common.csproj" />
+    <ProjectReference Include="..\..\Data\KOM.Scribere.Data.Models\KOM.Scribere.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\KOM.Scribere.Data\KOM.Scribere.Data.csproj" />
+    <ProjectReference Include="..\..\Services\KOM.Scribere.Services.Data\KOM.Scribere.Services.Data.csproj" />
+    <ProjectReference Include="..\..\Services\KOM.Scribere.Services.Mapping\KOM.Scribere.Services.Mapping.csproj" />
+    <ProjectReference Include="..\..\Services\KOM.Scribere.Services.Messaging\KOM.Scribere.Services.Messaging.csproj" />
+    <ProjectReference Include="..\..\Services\KOM.Scribere.Services\KOM.Scribere.Services.csproj" />
+    <ProjectReference Include="..\KOM.Scribere.Web.Infrastructure\KOM.Scribere.Web.Infrastructure.csproj" />
+    <ProjectReference Include="..\KOM.Scribere.Web.ViewModels\KOM.Scribere.Web.ViewModels.csproj" />
+  </ItemGroup>
+</Project>
