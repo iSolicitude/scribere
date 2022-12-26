@@ -1,10 +1,9 @@
-﻿namespace KOM.Scribere.Data.Seeding
-{
-    using System;
-    using System.Threading.Tasks;
+﻿namespace KOM.Scribere.Data.Seeding;
 
-    public interface ISeeder
-    {
-        Task SeedAsync(ApplicationDbContext dbContext, IServiceProvider serviceProvider);
-    }
+using System;
+using System.Threading.Tasks;
+
+public interface ISeeder
+{
+    Task SeedAsync(ApplicationDbContext dbContext, IServiceProvider serviceProvider);
 }

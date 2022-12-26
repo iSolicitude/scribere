@@ -5,5 +5,7 @@
         public const string SystemName = "KOM.Scribere";
 
         public const string AdministratorRoleName = "Administrator";
+
+        public const string UserRoleName = "User";
     }
 }
