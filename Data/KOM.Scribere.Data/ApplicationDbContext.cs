@@ -12,7 +12,7 @@
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
+    public class ApplicationDbContext : IdentityDbContext<User, Role, string>
     {
         private static readonly MethodInfo SetIsDeletedQueryFilterMethod =
             typeof(ApplicationDbContext).GetMethod(
@@ -25,6 +25,18 @@
         }
 
         public DbSet<Setting> Settings { get; set; }
+
+        public DbSet<Post> Posts { get; set; }
+
+        public DbSet<Page> Pages { get; set; }
+
+        public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<Subscriber> Subscribers { get; set; }
+
+        public DbSet<FavoritePost> FavoritePosts { get; set; }
+
+        public DbSet<UserNotification> UserNotifications { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 

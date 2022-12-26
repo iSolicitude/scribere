@@ -22,7 +22,7 @@ namespace KOM.Scribere.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("KOM.Scribere.Data.Models.ApplicationRole", b =>
+            modelBuilder.Entity("KOM.Scribere.Data.Models.Role", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -63,7 +63,7 @@ namespace KOM.Scribere.Data.Migrations
                     b.ToTable("AspNetRoles", (string)null);
                 });
 
-            modelBuilder.Entity("KOM.Scribere.Data.Models.ApplicationUser", b =>
+            modelBuilder.Entity("KOM.Scribere.Data.Models.User", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -283,7 +283,7 @@ namespace KOM.Scribere.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("KOM.Scribere.Data.Models.ApplicationRole", null)
+                    b.HasOne("KOM.Scribere.Data.Models.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -292,7 +292,7 @@ namespace KOM.Scribere.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("KOM.Scribere.Data.Models.ApplicationUser", null)
+                    b.HasOne("KOM.Scribere.Data.Models.User", null)
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -301,7 +301,7 @@ namespace KOM.Scribere.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("KOM.Scribere.Data.Models.ApplicationUser", null)
+                    b.HasOne("KOM.Scribere.Data.Models.User", null)
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -310,13 +310,13 @@ namespace KOM.Scribere.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.HasOne("KOM.Scribere.Data.Models.ApplicationRole", null)
+                    b.HasOne("KOM.Scribere.Data.Models.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("KOM.Scribere.Data.Models.ApplicationUser", null)
+                    b.HasOne("KOM.Scribere.Data.Models.User", null)
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -325,14 +325,14 @@ namespace KOM.Scribere.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("KOM.Scribere.Data.Models.ApplicationUser", null)
+                    b.HasOne("KOM.Scribere.Data.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("KOM.Scribere.Data.Models.ApplicationUser", b =>
+            modelBuilder.Entity("KOM.Scribere.Data.Models.User", b =>
                 {
                     b.Navigation("Claims");
 
