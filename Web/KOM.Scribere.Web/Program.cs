@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using KOM.Scribere.Services.Data.UserPenalties;
 using KOM.Scribere.Services.Data.Users;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -104,6 +105,7 @@ public class Program
         services.AddTransient<IEmailSender>(x => new SendGridEmailSender(configuration["SendGrid:ApiKey"]));
         services.AddTransient<ISettingsService, SettingsService>();
         services.AddTransient<IUsersService, UsersService>();
+        services.AddTransient<IUserPenaltiesService, UserPenaltiesService>();
 
     }
 
