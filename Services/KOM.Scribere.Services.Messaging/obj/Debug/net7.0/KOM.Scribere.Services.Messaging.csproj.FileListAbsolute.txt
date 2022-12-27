@@ -1,0 +1,12 @@
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\bin\Debug\net7.0\KOM.Scribere.Services.Messaging.deps.json
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\bin\Debug\net7.0\KOM.Scribere.Services.Messaging.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\bin\Debug\net7.0\KOM.Scribere.Services.Messaging.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\KOM.Scribere.Services.Messaging.csproj.AssemblyReference.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\KOM.Scribere.Services.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\KOM.Scribere.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\KOM.Scribere.Services.Messaging.AssemblyInfo.cs
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\KOM.Scribere.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\KOM.Scribere.Services.Messaging.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\refint\KOM.Scribere.Services.Messaging.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\KOM.Scribere.Services.Messaging.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Messaging\obj\Debug\net7.0\ref\KOM.Scribere.Services.Messaging.dll

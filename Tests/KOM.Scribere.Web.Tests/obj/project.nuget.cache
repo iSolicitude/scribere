@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7dTINrhYKotI3ZkBdwtFJEid6XJwBPIkLjGFhCAQAQ+vnnsVtf8zoHCI4V925d0Sp2OTieD8HktO2yhU7lyGtw==",
+  "dgSpecHash": "kq61dw2LBhbhUxsLHzG5D28fHQbL7dTHMjrdYdwR77HwkoG1nN3SBdCv7WBk8ONmaNChUmot1nfhYu2b/UaoHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Tests\\KOM.Scribere.Web.Tests\\KOM.Scribere.Web.Tests.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,8 @@
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.0.3\\microsoft.aspnetcore.antiforgery.2.0.3.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.0.3\\microsoft.aspnetcore.authentication.abstractions.2.0.3.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.0.3\\microsoft.aspnetcore.authentication.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\7.0.1\\microsoft.aspnetcore.authentication.facebook.7.0.1.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.1\\microsoft.aspnetcore.authentication.google.7.0.1.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.0.4\\microsoft.aspnetcore.authorization.2.0.4.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.0.4\\microsoft.aspnetcore.authorization.policy.2.0.4.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.0.3\\microsoft.aspnetcore.cors.2.0.3.nupkg.sha512",
@@ -298,6 +300,7 @@
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\tinymce\\6.3.1\\tinymce.6.3.1.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\webessentials.aspnetcore.outputcaching\\1.0.43\\webessentials.aspnetcore.outputcaching.1.0.43.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\webessentials.aspnetcore.pwa\\1.0.65\\webessentials.aspnetcore.pwa.1.0.65.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\webessentials.aspnetcore.staticfileswithcache\\1.0.3\\webessentials.aspnetcore.staticfileswithcache.1.0.3.nupkg.sha512",

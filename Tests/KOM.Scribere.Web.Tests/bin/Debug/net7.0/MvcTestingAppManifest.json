@@ -1,0 +1,13 @@
+{
+  "KOM.Scribere.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\KOM.Scribere.Common",
+  "KOM.Scribere.Data.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Common",
+  "KOM.Scribere.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data",
+  "KOM.Scribere.Data.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Models",
+  "KOM.Scribere.Services.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Data",
+  "KOM.Scribere.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services",
+  "KOM.Scribere.Services.Mapping, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Mapping",
+  "KOM.Scribere.Services.Messaging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Messaging",
+  "KOM.Scribere.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web",
+  "KOM.Scribere.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web.Infrastructure",
+  "KOM.Scribere.Web.ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web.ViewModels"
+}

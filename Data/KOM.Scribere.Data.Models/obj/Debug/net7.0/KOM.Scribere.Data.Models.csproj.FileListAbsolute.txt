@@ -1,0 +1,15 @@
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\bin\Debug\net7.0\KOM.Scribere.Data.Models.deps.json
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\bin\Debug\net7.0\KOM.Scribere.Data.Models.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\bin\Debug\net7.0\KOM.Scribere.Data.Models.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\bin\Debug\net7.0\KOM.Scribere.Data.Common.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\bin\Debug\net7.0\KOM.Scribere.Data.Common.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.csproj.AssemblyReference.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.AssemblyInfoInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.AssemblyInfo.cs
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.csproj.CopyComplete
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\refint\KOM.Scribere.Data.Models.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\KOM.Scribere.Data.Models.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Data\KOM.Scribere.Data.Models\obj\Debug\net7.0\ref\KOM.Scribere.Data.Models.dll

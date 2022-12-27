@@ -314,6 +314,38 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Facebook/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.AspNetCore.Authentication.Google/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authorization/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -5883,6 +5915,12 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "TinyMCE/6.3.1": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "WebEssentials.AspNetCore.OutputCaching/1.0.43": {
         "type": "package",
         "dependencies": {
@@ -6233,15 +6271,22 @@
           "KOM.Scribere.Web.ViewModels": "1.0.0",
           "LigerShark.WebOptimizer.Core": "3.0.372",
           "LigerShark.WebOptimizer.Sass": "3.0.91",
+          "Microsoft.AspNetCore.Authentication.Facebook": "7.0.1",
+          "Microsoft.AspNetCore.Authentication.Google": "7.0.1",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "7.0.1",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.1",
           "Microsoft.AspNetCore.Identity.UI": "7.0.1",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "7.0.1",
+          "Microsoft.EntityFrameworkCore": "7.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1",
           "Microsoft.SyndicationFeed.ReaderWriter": "1.0.2",
           "Microsoft.VisualStudio.Web.BrowserLink": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.1",
+          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "7.0.1",
           "Microsoft.Web.LibraryManager.Build": "2.1.175",
           "OpenAI.Net": "1.0.4",
           "System.Linq.Async": "6.0.1",
+          "TinyMCE": "6.3.1",
           "WebEssentials.AspNetCore.OutputCaching": "1.0.43",
           "WebEssentials.AspNetCore.PWA": "1.0.65",
           "WebEssentials.AspNetCore.StaticFilesWithCache": "1.0.3",
@@ -6614,6 +6659,36 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.xml",
         "microsoft.aspnetcore.authentication.core.2.0.3.nupkg.sha512",
         "microsoft.aspnetcore.authentication.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/7.0.1": {
+      "sha512": "HZuJLpb21d1Mm6raClEcDN8yo417Xl7uxlvDwcKFBcDGgN1bULoQqTFU8jlKb0fvDA0ya58Cm44Y+Dehl3w6xw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.facebook/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.xml",
+        "microsoft.aspnetcore.authentication.facebook.7.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.facebook.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/7.0.1": {
+      "sha512": "uAQfuf9r15HVcFNNhmY6X9cvhKP19F7NPuoYaOWA1qRqDWsmv/vy7XPMM2WXhHL+uwOAbgsnYIsQKfY9GvDY+g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.7.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authorization/2.0.4": {
@@ -15745,6 +15820,135 @@
         "ref/xamarinwatchos10/_._",
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
+      ]
+    },
+    "TinyMCE/6.3.1": {
+      "sha512": "yITqSCCWEmGXj13yYH5n28GDpUret0MT9Ar70+k9mc9CNSrbOTP9FNXiuvaXCQ3juCpIYNI1XK4YnsEb6zXhcA==",
+      "type": "package",
+      "path": "tinymce/6.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/TinyMCE.targets",
+        "content/scripts/tinymce/icons/default/icons.js",
+        "content/scripts/tinymce/icons/default/icons.min.js",
+        "content/scripts/tinymce/langs/README.md",
+        "content/scripts/tinymce/license.txt",
+        "content/scripts/tinymce/models/dom/model.js",
+        "content/scripts/tinymce/models/dom/model.min.js",
+        "content/scripts/tinymce/plugins/advlist/plugin.js",
+        "content/scripts/tinymce/plugins/advlist/plugin.min.js",
+        "content/scripts/tinymce/plugins/anchor/plugin.js",
+        "content/scripts/tinymce/plugins/anchor/plugin.min.js",
+        "content/scripts/tinymce/plugins/autolink/plugin.js",
+        "content/scripts/tinymce/plugins/autolink/plugin.min.js",
+        "content/scripts/tinymce/plugins/autoresize/plugin.js",
+        "content/scripts/tinymce/plugins/autoresize/plugin.min.js",
+        "content/scripts/tinymce/plugins/autosave/plugin.js",
+        "content/scripts/tinymce/plugins/autosave/plugin.min.js",
+        "content/scripts/tinymce/plugins/charmap/plugin.js",
+        "content/scripts/tinymce/plugins/charmap/plugin.min.js",
+        "content/scripts/tinymce/plugins/code/plugin.js",
+        "content/scripts/tinymce/plugins/code/plugin.min.js",
+        "content/scripts/tinymce/plugins/codesample/plugin.js",
+        "content/scripts/tinymce/plugins/codesample/plugin.min.js",
+        "content/scripts/tinymce/plugins/directionality/plugin.js",
+        "content/scripts/tinymce/plugins/directionality/plugin.min.js",
+        "content/scripts/tinymce/plugins/emoticons/js/emojiimages.js",
+        "content/scripts/tinymce/plugins/emoticons/js/emojiimages.min.js",
+        "content/scripts/tinymce/plugins/emoticons/js/emojis.js",
+        "content/scripts/tinymce/plugins/emoticons/js/emojis.min.js",
+        "content/scripts/tinymce/plugins/emoticons/plugin.js",
+        "content/scripts/tinymce/plugins/emoticons/plugin.min.js",
+        "content/scripts/tinymce/plugins/fullscreen/plugin.js",
+        "content/scripts/tinymce/plugins/fullscreen/plugin.min.js",
+        "content/scripts/tinymce/plugins/help/plugin.js",
+        "content/scripts/tinymce/plugins/help/plugin.min.js",
+        "content/scripts/tinymce/plugins/image/plugin.js",
+        "content/scripts/tinymce/plugins/image/plugin.min.js",
+        "content/scripts/tinymce/plugins/importcss/plugin.js",
+        "content/scripts/tinymce/plugins/importcss/plugin.min.js",
+        "content/scripts/tinymce/plugins/insertdatetime/plugin.js",
+        "content/scripts/tinymce/plugins/insertdatetime/plugin.min.js",
+        "content/scripts/tinymce/plugins/link/plugin.js",
+        "content/scripts/tinymce/plugins/link/plugin.min.js",
+        "content/scripts/tinymce/plugins/lists/plugin.js",
+        "content/scripts/tinymce/plugins/lists/plugin.min.js",
+        "content/scripts/tinymce/plugins/media/plugin.js",
+        "content/scripts/tinymce/plugins/media/plugin.min.js",
+        "content/scripts/tinymce/plugins/nonbreaking/plugin.js",
+        "content/scripts/tinymce/plugins/nonbreaking/plugin.min.js",
+        "content/scripts/tinymce/plugins/pagebreak/plugin.js",
+        "content/scripts/tinymce/plugins/pagebreak/plugin.min.js",
+        "content/scripts/tinymce/plugins/preview/plugin.js",
+        "content/scripts/tinymce/plugins/preview/plugin.min.js",
+        "content/scripts/tinymce/plugins/quickbars/plugin.js",
+        "content/scripts/tinymce/plugins/quickbars/plugin.min.js",
+        "content/scripts/tinymce/plugins/save/plugin.js",
+        "content/scripts/tinymce/plugins/save/plugin.min.js",
+        "content/scripts/tinymce/plugins/searchreplace/plugin.js",
+        "content/scripts/tinymce/plugins/searchreplace/plugin.min.js",
+        "content/scripts/tinymce/plugins/table/plugin.js",
+        "content/scripts/tinymce/plugins/table/plugin.min.js",
+        "content/scripts/tinymce/plugins/template/plugin.js",
+        "content/scripts/tinymce/plugins/template/plugin.min.js",
+        "content/scripts/tinymce/plugins/visualblocks/plugin.js",
+        "content/scripts/tinymce/plugins/visualblocks/plugin.min.js",
+        "content/scripts/tinymce/plugins/visualchars/plugin.js",
+        "content/scripts/tinymce/plugins/visualchars/plugin.min.js",
+        "content/scripts/tinymce/plugins/wordcount/plugin.js",
+        "content/scripts/tinymce/plugins/wordcount/plugin.min.js",
+        "content/scripts/tinymce/skins/content/dark/content.css",
+        "content/scripts/tinymce/skins/content/dark/content.min.css",
+        "content/scripts/tinymce/skins/content/default/content.css",
+        "content/scripts/tinymce/skins/content/default/content.min.css",
+        "content/scripts/tinymce/skins/content/document/content.css",
+        "content/scripts/tinymce/skins/content/document/content.min.css",
+        "content/scripts/tinymce/skins/content/tinymce-5-dark/content.css",
+        "content/scripts/tinymce/skins/content/tinymce-5-dark/content.min.css",
+        "content/scripts/tinymce/skins/content/tinymce-5/content.css",
+        "content/scripts/tinymce/skins/content/tinymce-5/content.min.css",
+        "content/scripts/tinymce/skins/content/writer/content.css",
+        "content/scripts/tinymce/skins/content/writer/content.min.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/content.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/content.inline.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/content.inline.min.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/content.min.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/skin.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/skin.min.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/skin.shadowdom.css",
+        "content/scripts/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css",
+        "content/scripts/tinymce/skins/ui/oxide/content.css",
+        "content/scripts/tinymce/skins/ui/oxide/content.inline.css",
+        "content/scripts/tinymce/skins/ui/oxide/content.inline.min.css",
+        "content/scripts/tinymce/skins/ui/oxide/content.min.css",
+        "content/scripts/tinymce/skins/ui/oxide/skin.css",
+        "content/scripts/tinymce/skins/ui/oxide/skin.min.css",
+        "content/scripts/tinymce/skins/ui/oxide/skin.shadowdom.css",
+        "content/scripts/tinymce/skins/ui/oxide/skin.shadowdom.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/content.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/content.inline.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/content.inline.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/content.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/skin.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/skin.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/skin.shadowdom.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5-dark/skin.shadowdom.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/content.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/content.inline.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/content.inline.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/content.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/skin.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/skin.min.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/skin.shadowdom.css",
+        "content/scripts/tinymce/skins/ui/tinymce-5/skin.shadowdom.min.css",
+        "content/scripts/tinymce/themes/silver/theme.js",
+        "content/scripts/tinymce/themes/silver/theme.min.js",
+        "content/scripts/tinymce/tinymce.d.ts",
+        "content/scripts/tinymce/tinymce.js",
+        "content/scripts/tinymce/tinymce.min.js",
+        "tinymce.6.3.1.nupkg.sha512",
+        "tinymce.nuspec"
       ]
     },
     "WebEssentials.AspNetCore.OutputCaching/1.0.43": {

@@ -5,6 +5,7 @@
     using System.IO;
     using System.Threading.Tasks;
 
+    using CommandLine;
     using KOM.Scribere.Data;
     using KOM.Scribere.Data.Common;
     using KOM.Scribere.Data.Common.Repositories;
@@ -13,9 +14,6 @@
     using KOM.Scribere.Data.Seeding;
     using KOM.Scribere.Services.Data;
     using KOM.Scribere.Services.Messaging;
-
-    using CommandLine;
-
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;

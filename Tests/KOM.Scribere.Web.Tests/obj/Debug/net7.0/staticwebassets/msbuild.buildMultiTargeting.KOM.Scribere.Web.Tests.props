@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KOM.Scribere.Web.Tests.props" />
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\bin\Debug\net7.0\KOM.Scribere.Services.Mapping.deps.json
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\bin\Debug\net7.0\KOM.Scribere.Services.Mapping.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\bin\Debug\net7.0\KOM.Scribere.Services.Mapping.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\KOM.Scribere.Services.Mapping.csproj.AssemblyReference.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\KOM.Scribere.Services.Mapping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\KOM.Scribere.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\KOM.Scribere.Services.Mapping.AssemblyInfo.cs
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\KOM.Scribere.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\KOM.Scribere.Services.Mapping.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\refint\KOM.Scribere.Services.Mapping.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\KOM.Scribere.Services.Mapping.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Mapping\obj\Debug\net7.0\ref\KOM.Scribere.Services.Mapping.dll

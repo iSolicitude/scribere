@@ -1,0 +1,12 @@
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\bin\Debug\net7.0\KOM.Scribere.Common.deps.json
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\bin\Debug\net7.0\KOM.Scribere.Common.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\bin\Debug\net7.0\KOM.Scribere.Common.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\KOM.Scribere.Common.csproj.AssemblyReference.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\KOM.Scribere.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\KOM.Scribere.Common.AssemblyInfoInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\KOM.Scribere.Common.AssemblyInfo.cs
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\KOM.Scribere.Common.csproj.CoreCompileInputs.cache
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\KOM.Scribere.Common.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\refint\KOM.Scribere.Common.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\KOM.Scribere.Common.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\KOM.Scribere.Common\obj\Debug\net7.0\ref\KOM.Scribere.Common.dll

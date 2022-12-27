@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\KOM.Scribere.Web.props" />
+</Project>
