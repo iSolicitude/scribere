@@ -1,10 +1,9 @@
-﻿namespace KOM.Scribere.Data.Common
-{
-    using System;
-    using System.Threading.Tasks;
+﻿namespace KOM.Scribere.Data.Common;
 
-    public interface IDbQueryRunner : IDisposable
-    {
-        Task RunQueryAsync(string query, params object[] parameters);
-    }
+using System;
+using System.Threading.Tasks;
+
+public interface IDbQueryRunner : IDisposable
+{
+    Task RunQueryAsync(string query, params object[] parameters);
 }

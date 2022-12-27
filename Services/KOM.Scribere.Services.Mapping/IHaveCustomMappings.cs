@@ -1,9 +1,8 @@
-﻿namespace KOM.Scribere.Services.Mapping
-{
-    using AutoMapper;
+﻿namespace KOM.Scribere.Services.Mapping;
 
-    public interface IHaveCustomMappings
-    {
-        void CreateMappings(IProfileExpression configuration);
-    }
+using AutoMapper;
+
+public interface IHaveCustomMappings
+{
+    void CreateMappings(IProfileExpression configuration);
 }

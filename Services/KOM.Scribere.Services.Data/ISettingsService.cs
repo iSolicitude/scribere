@@ -1,11 +1,10 @@
-﻿namespace KOM.Scribere.Services.Data
+﻿namespace KOM.Scribere.Services.Data;
+
+using System.Collections.Generic;
+
+public interface ISettingsService
 {
-    using System.Collections.Generic;
+    int GetCount();
 
-    public interface ISettingsService
-    {
-        int GetCount();
-
-        IEnumerable<T> GetAll<T>();
-    }
+    IEnumerable<T> GetAll<T>();
 }

@@ -1,7 +1,6 @@
-﻿namespace KOM.Scribere.Web.ViewModels.Administration.Dashboard
+﻿namespace KOM.Scribere.Web.ViewModels.Administration.Dashboard;
+
+public class IndexViewModel
 {
-    public class IndexViewModel
-    {
-        public int SettingsCount { get; set; }
-    }
+    public int SettingsCount { get; set; }
 }

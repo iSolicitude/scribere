@@ -1,11 +1,10 @@
-﻿namespace KOM.Scribere.Common
+﻿namespace KOM.Scribere.Common;
+
+public static class GlobalConstants
 {
-    public static class GlobalConstants
-    {
-        public const string SystemName = "KOM.Scribere";
+    public const string SystemName = "KOM.Scribere";
 
-        public const string AdministratorRoleName = "Administrator";
+    public const string AdministratorRoleName = "Administrator";
 
-        public const string UserRoleName = "User";
-    }
+    public const string UserRoleName = "User";
 }

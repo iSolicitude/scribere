@@ -1,19 +1,18 @@
-﻿namespace KOM.Scribere.Services.Messaging
-{
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+﻿namespace KOM.Scribere.Services.Messaging;
 
-    public class NullMessageSender : IEmailSender
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+public class NullMessageSender : IEmailSender
+{
+    public Task SendEmailAsync(
+        string from,
+        string fromName,
+        string to,
+        string subject,
+        string htmlContent,
+        IEnumerable<EmailAttachment> attachments = null)
     {
-        public Task SendEmailAsync(
-            string from,
-            string fromName,
-            string to,
-            string subject,
-            string htmlContent,
-            IEnumerable<EmailAttachment> attachments = null)
-        {
-            return Task.CompletedTask;
-        }
+        return Task.CompletedTask;
     }
 }

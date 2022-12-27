@@ -1,29 +1,28 @@
-﻿namespace KOM.Scribere.Services.Data
+﻿namespace KOM.Scribere.Services.Data;
+
+using System.Collections.Generic;
+using System.Linq;
+
+using KOM.Scribere.Data.Common.Repositories;
+using KOM.Scribere.Data.Models;
+using KOM.Scribere.Services.Mapping;
+
+public class SettingsService : ISettingsService
 {
-    using System.Collections.Generic;
-    using System.Linq;
+    private readonly IDeletableEntityRepository<Setting> settingsRepository;
 
-    using KOM.Scribere.Data.Common.Repositories;
-    using KOM.Scribere.Data.Models;
-    using KOM.Scribere.Services.Mapping;
-
-    public class SettingsService : ISettingsService
+    public SettingsService(IDeletableEntityRepository<Setting> settingsRepository)
     {
-        private readonly IDeletableEntityRepository<Setting> settingsRepository;
+        this.settingsRepository = settingsRepository;
+    }
 
-        public SettingsService(IDeletableEntityRepository<Setting> settingsRepository)
-        {
-            this.settingsRepository = settingsRepository;
-        }
+    public int GetCount()
+    {
+        return this.settingsRepository.AllAsNoTracking().Count();
+    }
 
-        public int GetCount()
-        {
-            return this.settingsRepository.AllAsNoTracking().Count();
-        }
-
-        public IEnumerable<T> GetAll<T>()
-        {
-            return this.settingsRepository.All().To<T>().ToList();
-        }
+    public IEnumerable<T> GetAll<T>()
+    {
+        return this.settingsRepository.All().To<T>().ToList();
     }
 }

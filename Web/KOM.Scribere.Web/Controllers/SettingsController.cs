@@ -1,43 +1,42 @@
-﻿namespace KOM.Scribere.Web.Controllers
+﻿namespace KOM.Scribere.Web.Controllers;
+
+using System;
+using System.Threading.Tasks;
+
+using KOM.Scribere.Data.Common.Repositories;
+using KOM.Scribere.Data.Models;
+using KOM.Scribere.Services.Data;
+using KOM.Scribere.Web.ViewModels.Settings;
+
+using Microsoft.AspNetCore.Mvc;
+
+public class SettingsController : BaseController
 {
-    using System;
-    using System.Threading.Tasks;
+    private readonly ISettingsService settingsService;
 
-    using KOM.Scribere.Data.Common.Repositories;
-    using KOM.Scribere.Data.Models;
-    using KOM.Scribere.Services.Data;
-    using KOM.Scribere.Web.ViewModels.Settings;
+    private readonly IDeletableEntityRepository<Setting> repository;
 
-    using Microsoft.AspNetCore.Mvc;
-
-    public class SettingsController : BaseController
+    public SettingsController(ISettingsService settingsService, IDeletableEntityRepository<Setting> repository)
     {
-        private readonly ISettingsService settingsService;
+        this.settingsService = settingsService;
+        this.repository = repository;
+    }
 
-        private readonly IDeletableEntityRepository<Setting> repository;
+    public IActionResult Index()
+    {
+        var settings = this.settingsService.GetAll<SettingViewModel>();
+        var model = new SettingsListViewModel { Settings = settings };
+        return this.View(model);
+    }
 
-        public SettingsController(ISettingsService settingsService, IDeletableEntityRepository<Setting> repository)
-        {
-            this.settingsService = settingsService;
-            this.repository = repository;
-        }
+    public async Task<IActionResult> InsertSetting()
+    {
+        var random = new Random();
+        var setting = new Setting { Name = $"Name_{random.Next()}", Value = $"Value_{random.Next()}" };
 
-        public IActionResult Index()
-        {
-            var settings = this.settingsService.GetAll<SettingViewModel>();
-            var model = new SettingsListViewModel { Settings = settings };
-            return this.View(model);
-        }
+        await this.repository.AddAsync(setting);
+        await this.repository.SaveChangesAsync();
 
-        public async Task<IActionResult> InsertSetting()
-        {
-            var random = new Random();
-            var setting = new Setting { Name = $"Name_{random.Next()}", Value = $"Value_{random.Next()}" };
-
-            await this.repository.AddAsync(setting);
-            await this.repository.SaveChangesAsync();
-
-            return this.RedirectToAction(nameof(this.Index));
-        }
+        return this.RedirectToAction(nameof(this.Index));
     }
 }

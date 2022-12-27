@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\KOM.Scribere.Data.Common\KOM.Scribere.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\KOM.Scribere.Data.Models\KOM.Scribere.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\KOM.Scribere.Web.ViewModels\KOM.Scribere.Web.ViewModels.csproj" />
     <ProjectReference Include="..\KOM.Scribere.Services.Mapping\KOM.Scribere.Services.Mapping.csproj" />
   </ItemGroup>
 
