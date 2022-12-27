@@ -1,0 +1,54 @@
+﻿@using KOM.Scribere.Common
+@model IEnumerable<KOM.Scribere.Web.ViewModels.Users.BannedApplicationUserViewModel>
+@{
+    this.ViewData["Title"] = "All Banned Users";
+}
+
+<div class="container-fluid">
+    <h1 class="h3 mb-2 text-gray-800">@this.ViewData["Title"]</h1>
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="dataTable" class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Banned On</th>
+                            @*<th>Country</th>*@
+                            <th>Town</th>
+                            <th>Address</th>
+                            <th>Reason to be blocked</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in this.Model)
+                        {
+                            <tr>
+                                <td>@user.UserName</td>
+                                <td>@user.FullName</td>
+                                <td>
+                                    @if (user.Role == GlobalConstants.AdministratorRoleName)
+                                    {
+                                        <span class="badge badge-success">@user.Role</span>
+                                    }
+                                    else if (user.Role == GlobalConstants.UserRoleName)
+                                    {
+                                        <span class="badge badge-secondary">@user.Role</span>
+                                    }
+                                </td>
+                                <td><time datetime="@user.BannedOn.ToString("O")"></time></td>
+                                @*<td>@user.CountryName</td>*@
+                                <td>@user.Town</td>
+                                <td>@user.Address</td>
+                                <td>@user.ReasonToBeBlocked</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

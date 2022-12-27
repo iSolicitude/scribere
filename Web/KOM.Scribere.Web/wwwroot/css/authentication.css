@@ -1,0 +1,25 @@
+﻿.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.social-container .social {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-container .social i {
+    font-size: 25px;
+}
+
+.form-horizontal {
+    display: inline-block;
+}
+
+.form-horizontal button {
+    color: #007bff;
+}

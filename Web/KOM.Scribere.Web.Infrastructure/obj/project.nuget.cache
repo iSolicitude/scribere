@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jXyDXDAm8gSiqpGWT2HCHlDBGbuilOi7M7YVHH+YoXK8oLdtotWISSdtqz+eHoJvupuRJpp3G8WHszLpNYndGQ==",
+  "dgSpecHash": "5HP64QriSa+xuKlHzDziSB/J/71aVa+c5WCDdpaVZ1MdNqX2FNDqKgxexr3Rvmb7RHLOc4Rv6Jcr+BWLKhMBZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web.Infrastructure\\KOM.Scribere.Web.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\DomornieNelson\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
     "C:\\Users\\DomornieNelson\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
   ],

@@ -1,0 +1,78 @@
+﻿@model KOM.Scribere.Web.ViewModels.UserPenalties.UserPenaltiesInputModel
+@{
+    this.ViewData["Title"] = "User Penalties Block/Unblock Users";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h5 mb-0 text-gray-800">Block User</h1>
+    </div>
+    <form method="post">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 mb-4">
+                <section class="form-group">
+                    <label asp-for="@this.Model.UserId" class="control-label">Block User</label>
+                    <section class="field mb-4">
+                        <select class="ui fluid search selection dropdown" asp-for="@this.Model.UserId" asp-items="@this.Model.UnblockedUsernames">
+                            <option value="">Select Username...</option>
+                        </select>
+                        <span asp-validation-for="@this.Model.UserId" class="text-danger"></span>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-md-12 mb-4">
+                <label asp-for="@this.Model.ReasonToBeBlocked"></label>
+                <textarea placeholder="Type reason to block the user..." class="form-control" asp-for="@this.Model.ReasonToBeBlocked" rows="100" style="max-height: 200px"></textarea>
+                <span asp-validation-for="@this.Model.ReasonToBeBlocked" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <button asp-area="Administration" asp-controller="Penalties" asp-action="BlockUser" class="btn btn-danger btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-user-lock"></i>
+                    </span>
+                    <span class="text">Block User</span>
+                </button>
+            </div>
+        </div>
+    </form>
+    <hr />
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h5 mb-0 text-gray-800">Unblock user</h1>
+    </div>
+    <form method="post">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 mb-4">
+                <section class="form-group">
+                    <label asp-for="@this.Model.UserId" class="control-label">Unblock user</label>
+                    <section class="field mb-4">
+                        <select class="ui fluid search selection dropdown" asp-for="@this.Model.UserId" asp-items="@this.Model.BlockedUsernames">
+                            <option value="">Select Username...</option>
+                        </select>
+                        <span asp-validation-for="@this.Model.UserId" class="text-danger"></span>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <button asp-area="Administration" asp-controller="Penalties" asp-action="UnblockUser" class="btn btn-success btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-unlock"></i>
+                    </span>
+                    <span class="text">Unblock user</span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    <script>
+        $('.ui.fluid').dropdown();
+    </script>
+}

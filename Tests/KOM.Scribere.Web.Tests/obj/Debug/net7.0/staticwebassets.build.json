@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F4iQBhDJ9xXp39Tqzf6oJLZjjU6baneFw7eZbVbKLqQ=",
+  "Hash": "a+J70H1KoYZYb87gypuYAWwDKbuz5yySOhqYmLzErjY=",
   "Source": "KOM.Scribere.Web.Tests",
   "BasePath": "_content/KOM.Scribere.Web.Tests",
   "Mode": "Default",
@@ -28,6 +28,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\authentication.css",
+      "SourceId": "KOM.Scribere.Web",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\",
+      "BasePath": "_content/KOM.Scribere.Web",
+      "RelativePath": "css/authentication.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\authentication.css"
+    },
     {
       "Identity": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\site.css",
       "SourceId": "KOM.Scribere.Web",
@@ -2271,6 +2288,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\userStatus\\css\\userStatus.css",
+      "SourceId": "KOM.Scribere.Web",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\",
+      "BasePath": "_content/KOM.Scribere.Web",
+      "RelativePath": "userStatus/css/userStatus.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userStatus\\css\\userStatus.css"
+    },
+    {
+      "Identity": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\userStatus\\js\\userStatus.js",
+      "SourceId": "KOM.Scribere.Web",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\",
+      "BasePath": "_content/KOM.Scribere.Web",
+      "RelativePath": "userStatus/js/userStatus.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userStatus\\js\\userStatus.js"
     }
   ]
 }

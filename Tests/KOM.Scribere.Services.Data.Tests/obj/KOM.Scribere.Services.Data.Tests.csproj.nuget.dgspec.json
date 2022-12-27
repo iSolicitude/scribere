@@ -357,6 +357,9 @@
               "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Models\\KOM.Scribere.Data.Models.csproj": {
                 "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Models\\KOM.Scribere.Data.Models.csproj"
               },
+              "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\KOM.Scribere.Common\\KOM.Scribere.Common.csproj": {
+                "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\KOM.Scribere.Common\\KOM.Scribere.Common.csproj"
+              },
               "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Mapping\\KOM.Scribere.Services.Mapping.csproj": {
                 "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Mapping\\KOM.Scribere.Services.Mapping.csproj"
               },
@@ -381,6 +384,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.2.0-beta.435, )"
+            },
+            "Z.EntityFramework.Plus.EFCore": {
+              "target": "Package",
+              "version": "[7.18.1, )"
             }
           },
           "imports": [

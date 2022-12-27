@@ -81,3 +81,9 @@ C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\obj\Debug\ne
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\obj\Debug\net7.0\Sandbox.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\obj\Debug\net7.0\Sandbox.genruntimeconfig.cache
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\obj\Debug\net7.0\ref\Sandbox.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\bin\Debug\net7.0\KOM.Scribere.Web.ViewModels.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\Sandbox\bin\Debug\net7.0\KOM.Scribere.Web.ViewModels.pdb

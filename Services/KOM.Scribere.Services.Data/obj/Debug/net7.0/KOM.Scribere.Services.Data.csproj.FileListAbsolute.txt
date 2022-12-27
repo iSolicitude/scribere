@@ -17,3 +17,5 @@ C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Serv
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\obj\Debug\net7.0\refint\KOM.Scribere.Services.Data.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\obj\Debug\net7.0\KOM.Scribere.Services.Data.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\obj\Debug\net7.0\ref\KOM.Scribere.Services.Data.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\bin\Debug\net7.0\KOM.Scribere.Web.ViewModels.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\bin\Debug\net7.0\KOM.Scribere.Web.ViewModels.pdb

@@ -1,0 +1,71 @@
+﻿@using KOM.Scribere.Common
+@model KOM.Scribere.Web.ViewModels.Users.AllUsersViewModel
+@{
+    this.ViewData["Title"] = "All Users";
+}
+
+<div class="container-fluid">
+    <div class="col-sm-12" style="padding:20px">
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="userTable" class="table table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Registered On</th>
+                            @*<th>Country</th>*@
+                            <th>City</th>
+                            <th>Address</th>
+                            <th>Address2</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var user in this.Model.ApplicationUsers)
+                        {
+                            <tr>
+                                <td>@user.UserName</td>
+                                <td>@user.FullName</td>
+                                <td>
+                                    @if (user.Role == GlobalConstants.AdministratorRoleName)
+                                    {
+                                        <span class="badge badge-success">@user.Role</span>
+                                    }
+                                    else if (user.Role == GlobalConstants.UserRoleName)
+                                    {
+                                        <span class="badge badge-secondary">@user.Role</span>
+                                    }
+                                </td>
+                                <td><time datetime="@user.CreatedOn.ToString("O")"></time></td>
+                                @*<td>@user.CountryName</td>*@
+                                <td>@user.City</td>
+                                <td>@user.Address1</td>
+                                <td>@user.Address2</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#userTable").DataTable();
+            loadData();
+            $('#reload').on('click', function () {
+                loadData();
+            });
+        });
+        function loadData() {
+            $('#viewAll').load('/admin/user/LoadAll');
+        }
+    </script>
+}

@@ -1,13 +1,11 @@
-﻿using System.Collections.Generic;
-
-namespace KOM.Scribere.Data.Repositories;
+﻿namespace KOM.Scribere.Data.Repositories;
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 using KOM.Scribere.Data.Common.Repositories;
-
 using Microsoft.EntityFrameworkCore;
 
 public class EfRepository<TEntity> : IRepository<TEntity>
@@ -28,9 +26,8 @@ public class EfRepository<TEntity> : IRepository<TEntity>
     public virtual IQueryable<TEntity> AllAsNoTracking() => this.DbSet.AsNoTracking();
 
     public virtual Task AddAsync(TEntity entity) => this.DbSet.AddAsync(entity).AsTask();
-    
-    public virtual Task AddRangeAsync(IEnumerable<TEntity> entities) => this.DbSet.AddRangeAsync(entities);
 
+    public virtual Task AddRangeAsync(IEnumerable<TEntity> entities) => this.DbSet.AddRangeAsync(entities);
 
     public virtual void Update(TEntity entity)
     {

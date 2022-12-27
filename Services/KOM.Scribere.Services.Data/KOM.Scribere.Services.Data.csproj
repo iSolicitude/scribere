@@ -16,11 +16,13 @@
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="7.18.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Data\KOM.Scribere.Data.Common\KOM.Scribere.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\KOM.Scribere.Data.Models\KOM.Scribere.Data.Models.csproj" />
+    <ProjectReference Include="..\..\KOM.Scribere.Common\KOM.Scribere.Common.csproj" />
     <ProjectReference Include="..\..\Web\KOM.Scribere.Web.ViewModels\KOM.Scribere.Web.ViewModels.csproj" />
     <ProjectReference Include="..\KOM.Scribere.Services.Mapping\KOM.Scribere.Services.Mapping.csproj" />
   </ItemGroup>

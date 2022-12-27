@@ -1,4 +1,9 @@
-﻿namespace KOM.Scribere.Web;
+﻿using System.Globalization;
+using KOM.Scribere.Services.Data.Users;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
+
+namespace KOM.Scribere.Web;
 
 using System.Reflection;
 
@@ -39,6 +44,25 @@ public class Program
 
         services.AddDefaultIdentity<User>(IdentityOptionsProvider.GetIdentityOptions)
             .AddRoles<Role>().AddEntityFrameworkStores<ApplicationDbContext>();
+        
+        services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+        services.AddMvc()
+            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+            .AddDataAnnotationsLocalization();
+
+        services.Configure<RequestLocalizationOptions>(options =>
+        {
+            var supportedCultures = new[]
+            {
+                new CultureInfo("en"),
+                new CultureInfo("bg"),
+            };
+
+            options.DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "en");
+            options.SupportedCultures = supportedCultures;
+            options.SupportedUICultures = supportedCultures;
+        });
 
         services.Configure<CookiePolicyOptions>(
             options =>
@@ -46,6 +70,19 @@ public class Program
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
+        services.Configure<CookieTempDataProviderOptions>(options =>
+        {
+            options.Cookie.IsEssential = true;
+        });
+
+        services.ConfigureApplicationCookie(options =>
+        {
+            options.AccessDeniedPath = "/Error403";
+            options.Cookie.HttpOnly = true;
+            options.LoginPath = "/identity/account/login";
+            options.LogoutPath = "/logout";
+        });
 
         services.AddControllersWithViews(
             options =>
@@ -64,7 +101,10 @@ public class Program
 
         // Application services
         services.AddTransient<IEmailSender, NullMessageSender>();
+        services.AddTransient<IEmailSender>(x => new SendGridEmailSender(configuration["SendGrid:ApiKey"]));
         services.AddTransient<ISettingsService, SettingsService>();
+        services.AddTransient<IUsersService, UsersService>();
+
     }
 
     private static void Configure(WebApplication app)

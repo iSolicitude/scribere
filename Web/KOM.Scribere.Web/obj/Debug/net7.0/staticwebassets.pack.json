@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\authentication.css",
+      "PackagePath": "staticwebassets\\css\\authentication.css"
+    },
+    {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -527,6 +531,14 @@
     {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\lib\\tinymce\\tinymce.min.js",
       "PackagePath": "staticwebassets\\lib\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\userStatus\\css\\userStatus.css",
+      "PackagePath": "staticwebassets\\userStatus\\css\\userStatus.css"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\userStatus\\js\\userStatus.js",
+      "PackagePath": "staticwebassets\\userStatus\\js\\userStatus.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.KOM.Scribere.Web.Microsoft.AspNetCore.StaticWebAssets.props",
