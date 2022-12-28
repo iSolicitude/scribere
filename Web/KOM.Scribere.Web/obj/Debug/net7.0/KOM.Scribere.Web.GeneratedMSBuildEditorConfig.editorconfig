@@ -20,8 +20,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Areas/Administration/Views/AddUpdateBlog/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcQWRkVXBkYXRlQmxvZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Areas/Administration/Views/AddUpdateBlog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcQWRkVXBkYXRlQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Areas/Administration/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Areas/Administration/Views/Penalties/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cVmlld3NcUGVuYWx0aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Areas/Administration/Views/Users/AllBannedUsers.cshtml]
@@ -68,6 +80,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Pages/Error400.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3I0MDAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Pages/Error403.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3I0MDMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Pages/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Blog/Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xDb21tZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Blog/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,12 +112,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Notifications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Profile/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Profile/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Profile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Profile/SetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxTZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Profile/_PagingPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxfUGFnaW5nUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Profile/_UserCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxfVXNlckNhcmRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Settings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Shared/Offline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE9mZmxpbmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Shared/_CookieConsentPartial.cshtml]
@@ -94,6 +166,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Shared/_NotificationBadgePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25CYWRnZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/Shared/_SocialSharing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Tb2NpYWxTaGFyaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DomornieNelson/Documents/GitHub/Scribere/src/Web/KOM.Scribere.Web/Views/_ViewImports.cshtml]

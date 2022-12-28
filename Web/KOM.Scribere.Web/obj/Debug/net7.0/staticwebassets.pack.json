@@ -1,8 +1,24 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\abovethefold.scss",
+      "PackagePath": "staticwebassets\\css\\abovethefold.scss"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\admin.scss",
+      "PackagePath": "staticwebassets\\css\\admin.scss"
+    },
+    {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\authentication.css",
       "PackagePath": "staticwebassets\\css\\authentication.css"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\belowthefold.scss",
+      "PackagePath": "staticwebassets\\css\\belowthefold.scss"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\comments.scss",
+      "PackagePath": "staticwebassets\\css\\comments.scss"
     },
     {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\css\\site.css",
@@ -15,6 +31,10 @@
     {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\js\\admin.js",
+      "PackagePath": "staticwebassets\\js\\admin.js"
     },
     {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\js\\site.js",
@@ -63,6 +83,14 @@
     {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\lib\\prism\\prism.js",
+      "PackagePath": "staticwebassets\\lib\\prism\\prism.js"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\lib\\prism\\prism.scss",
+      "PackagePath": "staticwebassets\\lib\\prism\\prism.scss"
     },
     {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\lib\\tinymce\\icons\\default\\icons.js",
@@ -533,12 +561,36 @@
       "PackagePath": "staticwebassets\\lib\\tinymce\\tinymce.min.js"
     },
     {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\notification\\css\\notificationButton.css",
+      "PackagePath": "staticwebassets\\notification\\css\\notificationButton.css"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\notification\\css\\notifications.css",
+      "PackagePath": "staticwebassets\\notification\\css\\notifications.css"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\notification\\js\\notification.js",
+      "PackagePath": "staticwebassets\\notification\\js\\notification.js"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\notification\\notificationSoundMessage.mp3",
+      "PackagePath": "staticwebassets\\notification\\notificationSoundMessage.mp3"
+    },
+    {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\userStatus\\css\\userStatus.css",
       "PackagePath": "staticwebassets\\userStatus\\css\\userStatus.css"
     },
     {
       "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\userStatus\\js\\userStatus.js",
       "PackagePath": "staticwebassets\\userStatus\\js\\userStatus.js"
+    },
+    {
+      "Id": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web\\wwwroot\\wlwmanifest.xml",
+      "PackagePath": "staticwebassets\\wlwmanifest.xml"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.KOM.Scribere.Web.Microsoft.AspNetCore.StaticWebAssets.props",

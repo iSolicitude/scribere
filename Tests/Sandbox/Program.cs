@@ -1,4 +1,6 @@
-﻿namespace Sandbox;
+﻿using KingsOfMarketing.iShopper.Data.Common.Repositories;
+
+namespace Sandbox;
 
 using System;
 using System.Diagnostics;

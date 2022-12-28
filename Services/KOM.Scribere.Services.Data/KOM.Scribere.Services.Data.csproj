@@ -16,6 +16,8 @@
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    <PackageReference Include="WilderMinds.MetaWeblog" Version="5.1.0" />
     <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="7.18.1" />
   </ItemGroup>
 

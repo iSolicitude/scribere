@@ -2404,6 +2404,16 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "KOM.Scribere.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/KOM.Scribere.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KOM.Scribere.Common.dll": {}
+        }
+      },
       "KOM.Scribere.Data.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2442,6 +2452,21 @@
         },
         "runtime": {
           "bin/placeholder/KOM.Scribere.Services.Mapping.dll": {}
+        }
+      },
+      "KOM.Scribere.Web.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "KOM.Scribere.Common": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KOM.Scribere.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KOM.Scribere.Web.Infrastructure.dll": {}
         }
       }
     }
@@ -7232,6 +7257,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "KOM.Scribere.Common/1.0.0": {
+      "type": "project",
+      "path": "../../KOM.Scribere.Common/KOM.Scribere.Common.csproj",
+      "msbuildProject": "../../KOM.Scribere.Common/KOM.Scribere.Common.csproj"
+    },
     "KOM.Scribere.Data.Common/1.0.0": {
       "type": "project",
       "path": "../../Data/KOM.Scribere.Data.Common/KOM.Scribere.Data.Common.csproj",
@@ -7246,12 +7276,18 @@
       "type": "project",
       "path": "../../Services/KOM.Scribere.Services.Mapping/KOM.Scribere.Services.Mapping.csproj",
       "msbuildProject": "../../Services/KOM.Scribere.Services.Mapping/KOM.Scribere.Services.Mapping.csproj"
+    },
+    "KOM.Scribere.Web.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../KOM.Scribere.Web.Infrastructure/KOM.Scribere.Web.Infrastructure.csproj",
+      "msbuildProject": "../KOM.Scribere.Web.Infrastructure/KOM.Scribere.Web.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "KOM.Scribere.Data.Models >= 1.0.0",
       "KOM.Scribere.Services.Mapping >= 1.0.0",
+      "KOM.Scribere.Web.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.2.0",
       "StyleCop.Analyzers >= 1.2.0-beta.435"
     ]
@@ -7294,6 +7330,9 @@
             },
             "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Mapping\\KOM.Scribere.Services.Mapping.csproj": {
               "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Mapping\\KOM.Scribere.Services.Mapping.csproj"
+            },
+            "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web.Infrastructure\\KOM.Scribere.Web.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Web\\KOM.Scribere.Web.Infrastructure\\KOM.Scribere.Web.Infrastructure.csproj"
             }
           }
         }

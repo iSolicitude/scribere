@@ -1,12 +1,11 @@
-﻿namespace KOM.Scribere.Data.Repositories;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using KOM.Scribere.Data.Common.Repositories;
+using KingsOfMarketing.iShopper.Data.Common.Repositories;
 using Microsoft.EntityFrameworkCore;
+
+namespace KOM.Scribere.Data.Repositories;
 
 public class EfRepository<TEntity> : IRepository<TEntity>
     where TEntity : class

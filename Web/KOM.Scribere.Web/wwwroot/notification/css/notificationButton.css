@@ -1,0 +1,57 @@
+﻿.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    text-align: center;
+    z-index: 200;
+}
+
+.float:hover {
+    color: rgb(222, 193, 124);
+}
+
+.my-float {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.badge {
+    position: absolute;
+    top: 8px;
+    right: 5.5px;
+    padding: 5px 7px;
+    border-radius: 50%;
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+}
+
+.notificationCircle {
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+}
+
+.notificationPulse {
+    animation: notification-pulse-animation 2s infinite;
+}
+
+@keyframes notification-pulse-animation {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}

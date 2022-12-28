@@ -1,7 +1,10 @@
 ﻿namespace KOM.Scribere.Data.Common.Repositories;
 
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
+using KingsOfMarketing.iShopper.Data.Common.Repositories;
 using KOM.Scribere.Data.Common.Models;
 
 public interface IDeletableEntityRepository<TEntity> : IRepository<TEntity>
@@ -11,7 +14,13 @@ public interface IDeletableEntityRepository<TEntity> : IRepository<TEntity>
 
     IQueryable<TEntity> AllAsNoTrackingWithDeleted();
 
+    Task<TEntity> GetByIdWithDeletedAsync(params object[] id);
+
+    void DeleteRange(IEnumerable<TEntity> entities);
+
     void HardDelete(TEntity entity);
+
+    void HardDeleteRange(IEnumerable<TEntity> entities);
 
     void Undelete(TEntity entity);
 }

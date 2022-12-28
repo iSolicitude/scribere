@@ -1,0 +1,9 @@
+﻿@if (this.User.Identity!.IsAuthenticated)
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Notifications" asp-action="Index" class="float">
+            <i class="fas fa-bell my-float"></i>
+            <span class="badge" id="notificationCount">0</span>
+        </a>
+    </li>
+}

@@ -1,0 +1,71 @@
+﻿@inject IViewLocalizer Localizer
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<KOM.Scribere.Web.ViewModels.Notifications.NotificationViewModel>
+
+@{
+    this.ViewData["Title"] = Localizer["Notifications"];
+}
+
+<div class="container">
+    <section id="allUserNotifications">
+        @foreach (var notification in this.Model)
+        {
+            <article id="@notification.Id">
+                <section class="notification-container-content">
+                    <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg" alt="avatar" />
+                    <header>
+                        <h4 class="text-primary">
+                            <span class="heading-span">
+                                <a class="delete-notification-button" onclick="deleteNotification('@notification.Id')">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                                <span>
+                                    <a asp-area="" asp-controller="Profile" asp-action="Index" asp-route-id="@notification.SenderId" class="links-in-heading">@notification.SenderUsername</a> send you a new <a href="@notification.Link" class="links-in-heading">message</a>
+                                </span>
+                            </span>
+                        </h4>
+                    </header>
+                    <main>
+                        <p class="notification-text">@notification.Text</p>
+                    </main>
+                    <footer>
+                        <span class="time-span">
+                            <i class="far fa-clock"></i>
+                            <time datetime="@notification.CreatedOn.ToString("O")"></time>
+                        </span>
+                    </footer>
+                </section>
+            </article>
+        }
+    </section>
+</div>
+
+@section CustomCss {
+    <link href="~/notification/css/notifications.css" rel="stylesheet" asp-append-version="true" />
+}
+
+@section Scripts {
+    <script>
+        function deleteNotification(notificationId) {
+            let antiForgeryToken = $("input:hidden[name=__RequestVerificationToken]").val();
+
+            $.ajax({
+                type: "POST",
+                url: `/Notifications/Delete`,
+                headers: {
+                    "X-CSRF-TOKEN": antiForgeryToken,
+                },
+                data: {
+                    "id": notificationId,
+                },
+                success: function (data) {
+                    if (data) {
+                        let notification = document.getElementById(notificationId);
+                        document.getElementById(`allUserNotifications`).removeChild(notification);
+                    }
+                }
+            });
+        }
+    </script>
+}

@@ -10,6 +10,7 @@
         "dependencies": {
           "KOM.Scribere.Data.Models": "1.0.0",
           "KOM.Scribere.Services.Mapping": "1.0.0",
+          "KOM.Scribere.Web.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "StyleCop.Analyzers": "1.2.0-beta.435"
         },
@@ -1398,6 +1399,11 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "KOM.Scribere.Common/1.0.0": {
+        "runtime": {
+          "KOM.Scribere.Common.dll": {}
+        }
+      },
       "KOM.Scribere.Data.Common/1.0.0": {
         "dependencies": {
           "System.ComponentModel.Annotations": "5.0.0"
@@ -1421,6 +1427,16 @@
         },
         "runtime": {
           "KOM.Scribere.Services.Mapping.dll": {}
+        }
+      },
+      "KOM.Scribere.Web.Infrastructure/1.0.0": {
+        "dependencies": {
+          "KOM.Scribere.Common": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "KOM.Scribere.Web.Infrastructure.dll": {}
         }
       }
     }
@@ -2411,6 +2427,11 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "KOM.Scribere.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "KOM.Scribere.Data.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -2422,6 +2443,11 @@
       "sha512": ""
     },
     "KOM.Scribere.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KOM.Scribere.Web.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,20 @@
+﻿@inject IViewLocalizer Localizer
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model KOM.Scribere.Web.ViewModels.Profile.AllUsersListViewModel
+@{
+    this.ViewData["Title"] = Localizer["All Users"];
+}
+
+<div class="container" style="padding-top: 100px;">
+    <div class="row">
+        @foreach (var user in this.Model.Users)
+        {
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <partial name="_UserCardPartial" model="@user" />
+            </div>
+        }
+    </div>
+</div>
+
+<partial name="_PagingPartial" model="@this.Model" />

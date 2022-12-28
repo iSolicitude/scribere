@@ -682,12 +682,7 @@ C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tes
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\KOM.Scribere.Common.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\KOM.Scribere.Data.Common.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\KOM.Scribere.Data.dll
@@ -732,3 +727,10 @@ C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tes
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\obj\Debug\net7.0\KOM.Scribere.Web.Tests.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\obj\Debug\net7.0\KOM.Scribere.Web.Tests.genruntimeconfig.cache
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\obj\Debug\net7.0\ref\KOM.Scribere.Web.Tests.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\Z.EntityFramework.Extensions.EFCore.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\Z.EntityFramework.Plus.EFCore.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\Z.Expressions.Eval.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Tests\KOM.Scribere.Web.Tests\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll

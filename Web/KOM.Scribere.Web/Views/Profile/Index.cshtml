@@ -1,0 +1,115 @@
+﻿@inject IViewLocalizer Localizer
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using iSolicitude.Web.Helpers
+@model KOM.Scribere.Web.ViewModels.Profile.ProfileViewModel
+
+@{
+    this.ViewData["Title"] = Localizer["My profile"];
+}
+
+<div class="mx-auto text-center pb-3" style="margin-top: 6rem;">
+    @if (this.User.Identity.Name == this.Model.Username)
+    {
+        <h2>@this.ViewData["Title"]</h2>
+    }
+    <div class="pt-4 pb-5 mt-4 mb-5 w-md-75 mx-auto">
+        <i class="fas fa-user fa-3x mb-4 text-primary"></i>
+        <div>
+            <span id="@(this.Model.Username)userStatusDot" class="user-status-dot"></span>
+            <span id="@(this.Model.Username)userStatus"></span>
+        </div>
+        @if (this.User.Identity.Name == this.Model.Username)
+        {
+            <h1 id="currentUsername">@@@this.Model.Username</h1>
+        }
+        <div class="mt-4">
+            @if (this.User.Identity.Name == this.Model.Username)
+            {
+                <button class="btn btn-outline-primary m-2 px-4" data-toggle="modal" data-target="#downloadDataModal">
+                    <i class="fas fa-download"></i> @Localizer["Download personal data"]
+                </button>
+                <a asp-area="" asp-controller="Profile" asp-action="ChangePassword" class="btn btn-outline-info m-2 px-4">
+                    <i class="far fa-edit"></i> @Localizer["Change password"]
+                </a>
+                <a asp-area="" asp-controller="Profile" asp-action="Edit" class="btn btn-outline-warning m-2 px-4">
+                    <i class="far fa-edit"></i> @Localizer["Edit profile"]
+                </a>
+                <button class="btn btn-outline-danger m-2 px-4" data-toggle="modal" data-target="#deleteAccountModal">
+                    <i class="fas fa-trash"></i> @Localizer["Delete account"]
+                </button>
+                <a asp-area="" asp-controller="Profile" asp-action="All" class="btn btn-outline-success m-2 px-4">
+                    <i class="fas fa-users"></i> @Localizer["All Users"]
+                </a>
+            }
+            else
+            {
+                <a href="/chat/with/@this.Model.Username/group/@this.Model.GroupId" class="btn btn-outline-primary m-2 px-4">@Localizer["Chat"]</a>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="downloadDataModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document" style="margin-top: 6rem;">
+        <div class="modal-content">
+            <form asp-area="" asp-controller="Profile" asp-action="Download" method="post" onsubmit="closeDownloadDataModal()">
+                <div class="modal-header">
+                    <h5 class="modal-title">Download personal data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-form-label">Type your password to confirm download</label>
+                        <input type="password" name="password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">@Localizer["Cancel"]</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-download"></i> @Localizer["Download"]
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="deleteAccountModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document" style="margin-top: 6rem;">
+        <div class="modal-content">
+            <form asp-area="" asp-controller="Profile" asp-action="DeleteAccount" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">@Localizer["Delete account"]</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <p>@Localizer["Account deletion is"] <b class="text-danger">@Localizer["immediate and irreversible"]</b>.</p>
+                        <p>@Localizer["Type your password to confirm deletion"]</p>
+                        <input type="password" name="password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">@Localizer["Cancel"]</button>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> @Localizer["Delete account"]
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        function closeDownloadDataModal() {
+            $('#downloadDataModal').modal('hide');
+        }
+    </script>
+}

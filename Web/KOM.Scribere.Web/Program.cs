@@ -1,13 +1,9 @@
-﻿using System.Globalization;
-using KOM.Scribere.Services.Data.UserPenalties;
-using KOM.Scribere.Services.Data.Users;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc.Razor;
-
-namespace KOM.Scribere.Web;
-
+﻿using System;
+using System.Globalization;
+using System.IO;
 using System.Reflection;
-
+using CloudinaryDotNet;
+using KingsOfMarketing.iShopper.Data.Common.Repositories;
 using KOM.Scribere.Data;
 using KOM.Scribere.Data.Common;
 using KOM.Scribere.Data.Common.Repositories;
@@ -15,134 +11,272 @@ using KOM.Scribere.Data.Models;
 using KOM.Scribere.Data.Repositories;
 using KOM.Scribere.Data.Seeding;
 using KOM.Scribere.Services.Data;
+using KOM.Scribere.Services.Data.Notifications;
+using KOM.Scribere.Services.Data.Profile;
+using KOM.Scribere.Services.Data.UserPenalties;
+using KOM.Scribere.Services.Data.Users;
 using KOM.Scribere.Services.Mapping;
 using KOM.Scribere.Services.Messaging;
+using KOM.Scribere.Web.Extensions;
+using KOM.Scribere.Web.Hubs;
 using KOM.Scribere.Web.ViewModels;
-
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
+using Serilog;
+using WebEssentials.AspNetCore.OutputCaching;
+using WebMarkupMin.AspNetCore7;
+using WebMarkupMin.Core;
+using WebMarkupMin.Core.Loggers;
+using ILogger = WebMarkupMin.Core.Loggers.ILogger;
+using MetaWeblogExtensions = WilderMinds.MetaWeblog.MetaWeblogExtensions;
 
-public class Program
+var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog();
+
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo("DataEncrpytionKeys"));
+
+builder.Services.AddDbContext<ApplicationDbContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDefaultIdentity<User>(IdentityOptionsProvider.GetIdentityOptions)
+    .AddRoles<Role>().AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+builder.Services.AddMvc()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization();
+
+builder.Services.AddRazorPages();
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
-    public static void Main(string[] args)
+    var supportedCultures = new[]
     {
-        var builder = WebApplication.CreateBuilder(args);
-        ConfigureServices(builder.Services, builder.Configuration);
-        var app = builder.Build();
-        Configure(app);
-        app.Run();
-    }
+        new CultureInfo("en"),
+        new CultureInfo("bg"),
+    };
 
-    private static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
+    options.DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "en");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+});
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
+});
+
+builder.Services.Configure<CookieTempDataProviderOptions>(options =>
+{
+    options.Cookie.IsEssential = true;
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.AccessDeniedPath = "/Error403";
+    options.Cookie.HttpOnly = true;
+    options.LoginPath = "/identity/account/login";
+    options.LogoutPath = "/logout";
+});
+
+builder.Services.Configure<SecurityStampValidatorOptions>(options =>
+{
+    options.ValidationInterval = TimeSpan.Zero;
+});
+
+builder.Services.AddControllersWithViews(options =>
     {
-        services.AddDbContext<ApplicationDbContext>(
-            options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+        options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+    })
+    .AddRazorRuntimeCompilation();
+builder.Services.AddAntiforgery(options =>
+{
+    options.HeaderName = "X-CSRF-TOKEN";
+});
 
-        services.AddDefaultIdentity<User>(IdentityOptionsProvider.GetIdentityOptions)
-            .AddRoles<Role>().AddEntityFrameworkStores<ApplicationDbContext>();
-        
-        services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddAuthentication().AddGoogle(options =>
+{
+    IConfigurationSection googleAuthNSection =
+        builder.Configuration.GetSection("Google");
 
-        services.AddMvc()
-            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-            .AddDataAnnotationsLocalization();
+    options.ClientId = googleAuthNSection["ClientId"]!;
+    options.ClientSecret = googleAuthNSection["ClientSecret"]!;
+}).AddFacebook(options =>
+{
+    options.AppId = builder.Configuration["FacebookSettings:AppId"]!;
+    options.AppSecret = builder.Configuration["FacebookSettings:AppSecret"]!;
+    options.AccessDeniedPath = "/AccessDeniedPathInfo";
+});
 
-        services.Configure<RequestLocalizationOptions>(options =>
-        {
-            var supportedCultures = new[]
-            {
-                new CultureInfo("en"),
-                new CultureInfo("bg"),
-            };
-
-            options.DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "en");
-            options.SupportedCultures = supportedCultures;
-            options.SupportedUICultures = supportedCultures;
-        });
-
-        services.Configure<CookiePolicyOptions>(
-            options =>
-            {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
-        services.Configure<CookieTempDataProviderOptions>(options =>
-        {
-            options.Cookie.IsEssential = true;
-        });
-
-        services.ConfigureApplicationCookie(options =>
-        {
-            options.AccessDeniedPath = "/Error403";
-            options.Cookie.HttpOnly = true;
-            options.LoginPath = "/identity/account/login";
-            options.LogoutPath = "/logout";
-        });
-
-        services.AddControllersWithViews(
-            options =>
-            {
-                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
-            }).AddRazorRuntimeCompilation();
-        services.AddRazorPages();
-        services.AddDatabaseDeveloperPageExceptionFilter();
-
-        services.AddSingleton(configuration);
-
-        // Data repositories
-        services.AddScoped(typeof(IDeletableEntityRepository<>), typeof(EfDeletableEntityRepository<>));
-        services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
-        services.AddScoped<IDbQueryRunner, DbQueryRunner>();
-
-        // Application services
-        services.AddTransient<IEmailSender, NullMessageSender>();
-        services.AddTransient<IEmailSender>(x => new SendGridEmailSender(configuration["SendGrid:ApiKey"]));
-        services.AddTransient<ISettingsService, SettingsService>();
-        services.AddTransient<IUsersService, UsersService>();
-        services.AddTransient<IUserPenaltiesService, UserPenaltiesService>();
-
-    }
-
-    private static void Configure(WebApplication app)
+builder.Services.AddProgressiveWebApp(
+    new WebEssentials.AspNetCore.Pwa.PwaOptions
     {
-        // Seed data on application startup
-        using (var serviceScope = app.Services.CreateScope())
-        {
-            var dbContext = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-            dbContext.Database.Migrate();
-            new ApplicationDbContextSeeder().SeedAsync(dbContext, serviceScope.ServiceProvider).GetAwaiter().GetResult();
-        }
+        OfflineRoute = "/shared/offline/",
+    });
 
-        AutoMapperConfig.RegisterMappings(typeof(ErrorViewModel).GetTypeInfo().Assembly);
+// Output caching (https://github.com/madskristensen/WebEssentials.AspNetCore.OutputCaching)
+builder.Services.AddOutputCaching(options =>
+{
+    options.Profiles["default"] = new OutputCacheProfile
+    {
+        Duration = 3600,
+    };
+});
+builder.Services.AddWebMarkupMin(options =>
+    {
+        options.AllowMinificationInDevelopmentEnvironment = true;
+        options.DisablePoweredByHttpHeaders = true;
+    })
+    .AddHtmlMinification(options =>
+    {
+        options.MinificationSettings.RemoveOptionalEndTags = false;
+        options.MinificationSettings.WhitespaceMinificationMode = WhitespaceMinificationMode.Safe;
+    });
 
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseDeveloperExceptionPage();
-            app.UseMigrationsEndPoint();
-        }
-        else
-        {
-            app.UseExceptionHandler("/Home/Error");
-            app.UseHsts();
-        }
+// Bundling, minification and Sass transpilation (https://github.com/ligershark/WebOptimizer)
+builder.Services.AddWebOptimizer(pipeline =>
+{
+    pipeline.MinifyJsFiles();
+    pipeline.CompileScssFiles()
+        .InlineImages(1);
+});
 
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
-        app.UseCookiePolicy();
+builder.Services.AddSignalR();
 
-        app.UseRouting();
+builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 
-        app.UseAuthentication();
-        app.UseAuthorization();
+builder.Services.AddResponseCaching();
+builder.Services.AddResponseCompression(opt => opt.EnableForHttps = true);
 
-        app.MapControllerRoute("areaRoute", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-        app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
-        app.MapRazorPages();
-    }
+builder.Services.AddSingleton(builder.Configuration);
+
+
+var account = new Account(
+    builder.Configuration["Cloudinary:CloudName"],
+    builder.Configuration["Cloudinary:ApiKey"],
+    builder.Configuration["Cloudinary:ApiSecret"]);
+
+var cloudinary = new Cloudinary(account);
+
+builder.Services.AddSingleton(cloudinary);
+
+// Data repositories
+builder.Services.AddScoped(typeof(IDeletableEntityRepository<>), typeof(EfDeletableEntityRepository<>));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+builder.Services.AddScoped<IDbQueryRunner, DbQueryRunner>();
+
+// Application services
+builder.Services.AddTransient<IBlogService, FileExtension>();
+builder.Services.AddTransient<IUsersService, UsersService>();
+builder.Services.AddTransient<IProfileService, ProfileService>();
+builder.Services.AddTransient<IUserPenaltiesService, UserPenaltiesService>();
+builder.Services.AddTransient<IEmailSender, NullMessageSender>();
+builder.Services.Configure<BlogSettings>(builder.Configuration.GetSection("BlogSettings"));
+builder.Services.AddTransient<IEmailSender>(x => new SendGridEmailSender(builder.Configuration["SendGrid:ApiKey"]));
+builder.Services.AddTransient<ISettingsService, SettingsService>();
+builder.Services.AddTransient<INotificationsService, NotificationsService>();
+builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+MetaWeblogExtensions.AddMetaWeblog<MetaWeblogService>(builder.Services);
+builder.Services.AddSingleton<ILogger, NullLogger>();
+
+var app = builder.Build();
+
+AutoMapperConfig.RegisterMappings(typeof(ErrorViewModel).GetTypeInfo().Assembly);
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
 }
+else
+{
+    app.UseExceptionHandler("{0}");
+    app.UseHsts();
+}
+
+app.Use(
+    (context, next) =>
+    {
+        context.Response.Headers["X-Content-Type-Options"] = "nosniff";
+        return next();
+    });
+
+app.UseResponseCompression();
+
+app.UseStatusCodePages();
+app.UseStatusCodePagesWithReExecute("/Shared/Error");
+
+if (builder.Configuration.GetValue<bool>("forcessl"))
+{
+    app.UseHttpsRedirection();
+}
+
+app.UseStaticFiles();
+app.UseCookiePolicy();
+
+app.UseRouting();
+
+MetaWeblogExtensions.UseMetaWeblog(app, "/metaweblog");
+app.UseAuthentication();
+
+app.UseOutputCaching();
+app.UseWebMarkupMin();
+app.UseAuthorization();
+
+app.MapControllerRoute("areaRoute", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+
+app.MapHub<NotificationHub>("/notificationHub");
+app.MapHub<UserStatusHub>("/userStatusHub");
+
+app.MapRazorPages();
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.EntityFrameworkCore.Query", Serilog.Events.LogEventLevel.Error)
+    .Enrich.FromLogContext()
+    .WriteTo.RollingFile("wwwroot/Logs/Log-{Date}.txt", outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level}] [{SourceContext}] {Message}{NewLine}{Exception}")
+    .WriteTo.Logger(l => l.Filter.ByIncludingOnly(e => e.Level >= Serilog.Events.LogEventLevel.Error).WriteTo.RollingFile("wwwroot/Logs/Errors/ErrorLog-{Date}.txt", outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level}] [{SourceContext}] {Message}{NewLine}{Exception}"))
+    .CreateLogger();
+
+using (var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
+{
+    var dbContext = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+    dbContext.Database.Migrate();
+
+    new ApplicationDbContextSeeder().SeedAsync(dbContext, serviceScope.ServiceProvider)
+        .GetAwaiter()
+        .GetResult();
+}
+
+try
+{
+    Log.Information("Starting application");
+    app.Run();
+    Log.Information("Stopped application");
+    return 0;
+}
+catch (Exception exception)
+{
+    Log.Fatal(exception, "Application terminated unexpectedly");
+    return 1;
+}
+finally
+{
+    Log.CloseAndFlush();
+}
+

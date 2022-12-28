@@ -1,0 +1,42 @@
+﻿.container {
+    margin-top: 100px;
+}
+
+.notification-container-content {
+    margin-bottom: 4rem;
+    padding: 30px 30px 15px 30px;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+.notification-container-content img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.heading-span {
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.delete-notification-button {
+    color: rgb(255, 0, 0);
+}
+
+.links-in-heading {
+    color: rgb(73, 162, 231);
+    text-decoration: underline !important;
+    text-transform: uppercase;
+}
+
+.notification-text {
+    padding-top: 0.5rem;
+    padding-left: 110px;
+    word-wrap: break-word;
+    line-height: 1.6em;
+}
+
+.time-span {
+    padding-left: 100px;
+}

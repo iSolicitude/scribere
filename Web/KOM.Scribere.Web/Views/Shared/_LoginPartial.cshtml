@@ -1,6 +1,9 @@
 ﻿@using KOM.Scribere.Common
 @using KOM.Scribere.Data.Models
 @using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.Security.Claims
+@using iSolicitude.Web.Helpers
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
 
@@ -8,7 +11,9 @@
     @if (this.SignInManager.IsSignedIn(this.User))
     {
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @this.User.Identity.Name!</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="Index" 
+               asp-route-userId="@this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value" 
+               title="Profile">Hello @this.User.Identity?.Name!</a>
         </li>
         if (this.User.IsInRole(GlobalConstants.AdministratorRoleName))
         {

@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\KOM.Scribere.Data.Models\KOM.Scribere.Data.Models.csproj" />
     <ProjectReference Include="..\..\Services\KOM.Scribere.Services.Mapping\KOM.Scribere.Services.Mapping.csproj" />
+    <ProjectReference Include="..\KOM.Scribere.Web.Infrastructure\KOM.Scribere.Web.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
