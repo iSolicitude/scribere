@@ -35,8 +35,17 @@
     ".NETCoreApp,Version=v7.0": {
       "KOM.Scribere.Web/1.0.0": {
         "dependencies": {
+          "AspNetCore.HealthChecks.SqlServer": "6.0.2",
+          "AspNetCore.HealthChecks.UI.Client": "6.0.5",
+          "AspNetCore.HealthChecks.UI.Core": "6.0.5",
+          "AspNetCore.HealthChecks.UI.InMemory.Storage": "6.0.5",
+          "AspNetCoreHero.ToastNotification": "1.1.0",
           "BuildBundlerMinifier": "3.2.449",
           "CloudinaryDotNet": "1.20.0",
+          "Hangfire": "1.7.32",
+          "Hangfire.Console": "1.4.2",
+          "Hangfire.Core": "1.7.32",
+          "Hangfire.SqlServer": "1.7.32",
           "KOM.Scribere.Common": "1.0.0",
           "KOM.Scribere.Data": "1.0.0",
           "KOM.Scribere.Data.Models": "1.0.0",
@@ -67,6 +76,8 @@
           "OpenAI.Net": "1.0.4",
           "Serilog.AspNetCore": "6.1.0",
           "Serilog.Extensions.Logging.File": "3.0.0",
+          "Serilog.UI": "2.2.3",
+          "Serilog.UI.MsSqlServerProvider": "2.1.2",
           "StyleCop.Analyzers": "1.2.0-beta.435",
           "System.Linq.Async": "6.0.1",
           "TinyMCE": "6.3.1",
@@ -174,8 +185,8 @@
           "Microsoft.Extensions.Configuration.Xml": "7.0.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions.Reference": "7.0.0.0",
           "Microsoft.Extensions.DependencyInjection.Reference": "7.0.0.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "7.0.0.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "7.0.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.Reference": "7.0.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Reference": "7.0.0.0",
           "Microsoft.Extensions.Features": "7.0.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions.Reference": "7.0.0.0",
           "Microsoft.Extensions.FileProviders.Composite.Reference": "7.0.0.0",
@@ -390,6 +401,102 @@
           "lib/netstandard2.0/AdvancedStringBuilder.dll": {}
         }
       },
+      "AngleSharp/0.17.1": {
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AngleSharp.dll": {
+            "assemblyVersion": "0.17.1.0",
+            "fileVersion": "0.17.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AngleSharp.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.SqlServer/6.0.2": {
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.0.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "6.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.SqlServer.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/HealthChecks.SqlServer.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.UI.Client/6.0.5": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.UI.Core": "6.0.5",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "6.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.UI.Client.dll": {
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/HealthChecks.UI.Client.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.UI.Core/6.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "6.0.7",
+          "System.Text.Json": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.UI.Core.dll": {
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/HealthChecks.UI.Core.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.UI.InMemory.Storage/6.0.5": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.UI.Core": "6.0.5",
+          "Microsoft.EntityFrameworkCore.InMemory": "6.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.UI.InMemory.Storage.dll": {
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/HealthChecks.UI.InMemory.Storage.dll": {}
+        }
+      },
+      "AspNetCoreHero.ToastNotification/1.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net5.0/AspNetCoreHero.ToastNotification.Views.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          },
+          "lib/net5.0/AspNetCoreHero.ToastNotification.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/AspNetCoreHero.ToastNotification.Views.dll": {},
+          "lib/net5.0/AspNetCoreHero.ToastNotification.dll": {}
+        }
+      },
       "AutoMapper/12.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0"
@@ -444,6 +551,20 @@
           "lib/netstandard2.0/Azure.Identity.dll": {}
         }
       },
+      "BlushingPenguin.JsonPath/1.0.6": {
+        "dependencies": {
+          "System.Text.Json": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/BlushingPenguin.JsonPath.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/BlushingPenguin.JsonPath.dll": {}
+        }
+      },
       "BuildBundlerMinifier/3.2.449": {},
       "CloudinaryDotNet/1.20.0": {
         "dependencies": {
@@ -461,6 +582,31 @@
           "lib/netstandard2.0/CloudinaryDotNet.dll": {}
         }
       },
+      "CodeHollow.FeedReader/1.2.4": {
+        "runtime": {
+          "lib/netcoreapp2.1/CodeHollow.FeedReader.dll": {
+            "assemblyVersion": "1.2.4.0",
+            "fileVersion": "1.2.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/CodeHollow.FeedReader.dll": {}
+        }
+      },
+      "Dapper/2.0.35": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.35.21366"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Dapper.dll": {}
+        }
+      },
       "DartSassHost/1.0.0-preview5": {
         "dependencies": {
           "AdvancedStringBuilder": "0.1.0",
@@ -474,6 +620,115 @@
         },
         "compile": {
           "lib/net5.0/DartSassHost.dll": {}
+        }
+      },
+      "Hangfire/1.7.32": {
+        "dependencies": {
+          "Hangfire.AspNetCore": "1.7.32",
+          "Hangfire.Core": "1.7.32",
+          "Hangfire.SqlServer": "1.7.32"
+        }
+      },
+      "Hangfire.AspNetCore/1.7.32": {
+        "dependencies": {
+          "Hangfire.Core": "1.7.32"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
+            "assemblyVersion": "1.7.32.0",
+            "fileVersion": "1.7.32.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {}
+        }
+      },
+      "Hangfire.Console/1.4.2": {
+        "dependencies": {
+          "Hangfire.Core": "1.7.32",
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Hangfire.Console.dll": {
+            "assemblyVersion": "1.4.2.0",
+            "fileVersion": "1.4.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Hangfire.Console.dll": {}
+        }
+      },
+      "Hangfire.Core/1.7.32": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.Core.dll": {
+            "assemblyVersion": "1.7.32.0",
+            "fileVersion": "1.7.32.0"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ca/Hangfire.Core.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/netstandard2.0/de/Hangfire.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Hangfire.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fa/Hangfire.Core.resources.dll": {
+            "locale": "fa"
+          },
+          "lib/netstandard2.0/fr/Hangfire.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/nb/Hangfire.Core.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/netstandard2.0/nl/Hangfire.Core.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/netstandard2.0/pt-BR/Hangfire.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-PT/Hangfire.Core.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/netstandard2.0/pt/Hangfire.Core.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/netstandard2.0/sv/Hangfire.Core.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/netstandard2.0/tr-TR/Hangfire.Core.resources.dll": {
+            "locale": "tr-TR"
+          },
+          "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
+            "locale": "zh"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.Core.dll": {}
+        }
+      },
+      "Hangfire.SqlServer/1.7.32": {
+        "dependencies": {
+          "Hangfire.Core": "1.7.32",
+          "System.Data.SqlClient": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
+            "assemblyVersion": "1.7.32.0",
+            "fileVersion": "1.7.32.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.SqlServer.dll": {}
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -710,12 +965,12 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "3.1.8"
+          "Microsoft.Extensions.Hosting.Abstractions": "6.0.0"
         }
       },
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         }
       },
@@ -735,7 +990,7 @@
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
@@ -747,9 +1002,10 @@
           "System.Buffers": "4.5.1"
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "7.0.0"
+          "Microsoft.Extensions.Primitives": "7.0.0",
+          "System.IO.Pipelines": "6.0.3"
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/7.0.1": {
@@ -2049,6 +2305,20 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.7": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "6.0.7.0",
+            "fileVersion": "6.0.722.31501"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/7.0.1": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.1",
@@ -2161,6 +2431,15 @@
           "lib/net7.0/Microsoft.Extensions.DependencyModel.dll": {}
         }
       },
+      "Microsoft.Extensions.Diagnostics.HealthChecks/6.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "6.0.7",
+          "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/6.0.7": {},
       "Microsoft.Extensions.FileProviders.Abstractions/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "7.0.0"
@@ -2190,12 +2469,11 @@
         }
       },
       "Microsoft.Extensions.FileSystemGlobbing/7.0.0": {},
-      "Microsoft.Extensions.Hosting.Abstractions/3.1.8": {
+      "Microsoft.Extensions.Hosting.Abstractions/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
-          "Microsoft.Extensions.FileProviders.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
+          "Microsoft.Extensions.FileProviders.Abstractions": "7.0.0"
         }
       },
       "Microsoft.Extensions.Identity.Core/7.0.1": {
@@ -2915,6 +3193,13 @@
           "Microsoft.NETCore.Targets": "1.1.3"
         }
       },
+      "runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "dependencies": {
+          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
+        }
+      },
       "runtime.native.System.IO.Compression/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -2954,6 +3239,33 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
+      "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/sni.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/sni.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x86/native/sni.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
       "SendGrid/9.28.1": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -3005,7 +3317,7 @@
       "Serilog.Extensions.Hosting/5.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "3.1.8",
+          "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "Serilog": "2.10.0",
           "Serilog.Extensions.Logging": "3.1.0"
@@ -3157,6 +3469,43 @@
         },
         "compile": {
           "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {}
+        }
+      },
+      "Serilog.UI/2.2.3": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/Serilog.Ui.Core.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          },
+          "lib/net7.0/Serilog.Ui.Web.dll": {
+            "assemblyVersion": "2.2.3.0",
+            "fileVersion": "2.2.3.0"
+          }
+        },
+        "compile": {
+          "lib/net7.0/Serilog.Ui.Core.dll": {},
+          "lib/net7.0/Serilog.Ui.Web.dll": {}
+        }
+      },
+      "Serilog.UI.MsSqlServerProvider/2.1.2": {
+        "dependencies": {
+          "Dapper": "2.0.35",
+          "Microsoft.Data.SqlClient": "5.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Ui.MsSqlServerProvider.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Ui.Core.dll": {},
+          "lib/netstandard2.0/Serilog.Ui.MsSqlServerProvider.dll": {}
         }
       },
       "starkbank-ecdsa/1.3.3": {
@@ -3340,6 +3689,37 @@
         }
       },
       "System.Data.DataSetExtensions/4.5.0": {},
+      "System.Data.SqlClient/4.4.0": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.6.25519.3"
+          },
+          "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Data.SqlClient.dll": {}
+        }
+      },
       "System.Diagnostics.Debug/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -3533,7 +3913,7 @@
           "System.Reflection": "4.3.0",
           "System.Reflection.Emit": "4.7.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.7.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
           "System.Reflection.TypeExtensions": "4.7.0",
@@ -3652,14 +4032,7 @@
           "System.Runtime": "4.3.1"
         }
       },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.1"
-        }
-      },
+      "System.Reflection.Emit.Lightweight/4.7.0": {},
       "System.Reflection.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -4296,6 +4669,14 @@
         }
       },
       "KOM.Scribere.Services/1.0.0": {
+        "dependencies": {
+          "CloudinaryDotNet": "1.20.0",
+          "KOM.Scribere.Data": "1.0.0",
+          "KOM.Scribere.Data.Common": "1.0.0",
+          "KOM.Scribere.Services.Data": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
         "runtime": {
           "KOM.Scribere.Services.dll": {}
         },
@@ -4345,9 +4726,19 @@
       },
       "KOM.Scribere.Web.Infrastructure/1.0.0": {
         "dependencies": {
+          "AngleSharp": "0.17.1",
+          "BlushingPenguin.JsonPath": "1.0.6",
+          "CodeHollow.FeedReader": "1.2.4",
+          "Hangfire": "1.7.32",
+          "Hangfire.Console": "1.4.2",
+          "Hangfire.Core": "1.7.32",
+          "Hangfire.SqlServer": "1.7.32",
           "KOM.Scribere.Common": "1.0.0",
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
+          "KOM.Scribere.Data.Models": "1.0.0",
+          "KOM.Scribere.Services.Messaging": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "NUglify": "1.16.1"
         },
         "runtime": {
           "KOM.Scribere.Web.Infrastructure.dll": {}
@@ -4964,13 +5355,13 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/7.0.0.0": {
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.Reference/7.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {}
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Diagnostics.HealthChecks/7.0.0.0": {
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Reference/7.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Diagnostics.HealthChecks.dll": {}
         },
@@ -6161,6 +6552,48 @@
       "path": "advancedstringbuilder/0.1.0",
       "hashPath": "advancedstringbuilder.0.1.0.nupkg.sha512"
     },
+    "AngleSharp/0.17.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5MPI4bbixlwxb0W/smOMeIR+QlxMy5/5jD+WnIAw4pBC+7AhLPe5bS3cLgQMJyvd6q0A48sG+uYOt/ep406GLA==",
+      "path": "anglesharp/0.17.1",
+      "hashPath": "anglesharp.0.17.1.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.SqlServer/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Af7ws27DnZZ4bKCiEREm7emSAKEtIiYirEAkI0ixFgK1fwJ99jmMnPC+kU01zfqn3FyCO/gZOUO7WbyVvTPpFg==",
+      "path": "aspnetcore.healthchecks.sqlserver/6.0.2",
+      "hashPath": "aspnetcore.healthchecks.sqlserver.6.0.2.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.Client/6.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ko4CM9lI3ZklTDW3LRtHoiDU/Soo/r3yYRM28jbvOGaN5MjkWYGtVFwkwuNcjLFkJoFxfjqjITf+TWEqNENBzA==",
+      "path": "aspnetcore.healthchecks.ui.client/6.0.5",
+      "hashPath": "aspnetcore.healthchecks.ui.client.6.0.5.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.Core/6.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CofYy5BJzODAKcZvpAODUhm11M/mtPhIcnGlqMip3H3adzfjpXHDJlbgZNBmua7ds85D+atEBsPvlcR4mQY92g==",
+      "path": "aspnetcore.healthchecks.ui.core/6.0.5",
+      "hashPath": "aspnetcore.healthchecks.ui.core.6.0.5.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.InMemory.Storage/6.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aVI+8fx+A12C+bD/Vo0qzc1EbRM9x4SE7dE6jGb6bUuNZ6C/ZBdvGLBH5pHdwXvYzUtUOLD0eWO2kG7NxkGt7A==",
+      "path": "aspnetcore.healthchecks.ui.inmemory.storage/6.0.5",
+      "hashPath": "aspnetcore.healthchecks.ui.inmemory.storage.6.0.5.nupkg.sha512"
+    },
+    "AspNetCoreHero.ToastNotification/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bCAYeD+b2pRelcOrHMNtYGVtRq+J2u+SAaND33v3u6qZCatHf4XSZOEPhBfCKJAjMGvsggtPKaNFnrv4VhwOfA==",
+      "path": "aspnetcorehero.toastnotification/1.1.0",
+      "hashPath": "aspnetcorehero.toastnotification.1.1.0.nupkg.sha512"
+    },
     "AutoMapper/12.0.0": {
       "type": "package",
       "serviceable": true,
@@ -6182,6 +6615,13 @@
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
+    "BlushingPenguin.JsonPath/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-maJYFO1V/O6L/2HkICUtKj+R6tbOFsjzmaeIL1gOL/uqwBAM2VcE6Q3XKifPm2X6eUEE6BJ5Em8vNh8EKCh8cQ==",
+      "path": "blushingpenguin.jsonpath/1.0.6",
+      "hashPath": "blushingpenguin.jsonpath.1.0.6.nupkg.sha512"
+    },
     "BuildBundlerMinifier/3.2.449": {
       "type": "package",
       "serviceable": true,
@@ -6196,12 +6636,61 @@
       "path": "cloudinarydotnet/1.20.0",
       "hashPath": "cloudinarydotnet.1.20.0.nupkg.sha512"
     },
+    "CodeHollow.FeedReader/1.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/5nKKK6UGfL0XkBVmXpBny1DiZTFXgLAoXumeR77OINKs9uGxrIKkW+2vHpQnMDlBsKOf+u3OzJYxdwuk8Pz0w==",
+      "path": "codehollow.feedreader/1.2.4",
+      "hashPath": "codehollow.feedreader.1.2.4.nupkg.sha512"
+    },
+    "Dapper/2.0.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/xAgd8BO8EDnJ0sURWEV8LptHHvTKxoYiT63YUF2U/yWE2VyUCqR2jcrtEyNngT9Kjzppecz95UKiBla3PnR7g==",
+      "path": "dapper/2.0.35",
+      "hashPath": "dapper.2.0.35.nupkg.sha512"
+    },
     "DartSassHost/1.0.0-preview5": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-JHbF87/K0s7fU0r7bWee1xRpWyU0vsglw1wkbmchRyBhYMAimHSHum1UGxIX2EawfA/+lfQEEi2no4g2I2OC8Q==",
       "path": "dartsasshost/1.0.0-preview5",
       "hashPath": "dartsasshost.1.0.0-preview5.nupkg.sha512"
+    },
+    "Hangfire/1.7.32": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LJHgkKFdPja/lUlopnQDDJ83AeY/i7UcBRcNO11pK+jCYeGX5Mq/oCOeJW0C8ccDJElVHveUVsI4JCtdVJ+UBw==",
+      "path": "hangfire/1.7.32",
+      "hashPath": "hangfire.1.7.32.nupkg.sha512"
+    },
+    "Hangfire.AspNetCore/1.7.32": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0yYFTozy3KKiSG5yCkqPeufiGlc8BOGaWJpOyONV93vuU9Okq7I6LOcgedx+QbyNhiiiUVzB0dLlmH1Mq3Oydg==",
+      "path": "hangfire.aspnetcore/1.7.32",
+      "hashPath": "hangfire.aspnetcore.1.7.32.nupkg.sha512"
+    },
+    "Hangfire.Console/1.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N1KeWrvVsJt2jnA6hA9Kid/6CnUMZdC0fVmDpyFAnTAdXrFdpTwvhGwfzoiUWD8boZweA3BvK6CFoZoJhjQTEg==",
+      "path": "hangfire.console/1.4.2",
+      "hashPath": "hangfire.console.1.4.2.nupkg.sha512"
+    },
+    "Hangfire.Core/1.7.32": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-138kq1LYQVppJBW9XOJ0brhhyV2hyaeBtIJb8WV7Tnqrn3s2sACnxosWdqZYgIlGBkLXXijXzgPY2c12VVPtgw==",
+      "path": "hangfire.core/1.7.32",
+      "hashPath": "hangfire.core.1.7.32.nupkg.sha512"
+    },
+    "Hangfire.SqlServer/1.7.32": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gKdRrwzBCGfbiufwgpE3HEheSX/FEM9EUUEdlcpULB1rruc2OW5b0x++BEFlstmj5+mdtd49J+Ig+NURk2QZ6Q==",
+      "path": "hangfire.sqlserver/1.7.32",
+      "hashPath": "hangfire.sqlserver.1.7.32.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -6392,12 +6881,12 @@
       "path": "microsoft.aspnetcore.http.extensions/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
-      "path": "microsoft.aspnetcore.http.features/2.2.0",
-      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+      "sha512": "sha512-3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "hashPath": "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/7.0.1": {
       "type": "package",
@@ -6861,6 +7350,13 @@
       "path": "microsoft.entityframeworkcore.design/7.0.1",
       "hashPath": "microsoft.entityframeworkcore.design.7.0.1.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n0hvDcK/tyrNMAFH0hmT0RRiK2ob8t+AwRbwn8uzQ47lvpfjvMRm8Mc113hb+zYsEBYdztthy69byTXNmjAsLw==",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.7",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.7.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Relational/7.0.1": {
       "type": "package",
       "serviceable": true,
@@ -6959,6 +7455,20 @@
       "path": "microsoft.extensions.dependencymodel/7.0.0",
       "hashPath": "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Diagnostics.HealthChecks/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oXviAVnSD9Q50+vxXJjfbGqVQUu4CLzYcKIiyemkc+kJFWXhmIOqW/KW3WPsv0/PzIc1jIJSj9SPvtpX69byYg==",
+      "path": "microsoft.extensions.diagnostics.healthchecks/6.0.7",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.6.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w50Sp/qi69rCipgnv03UP7GcpJf0mMPTQvi3wgKP3VV3/DqLdzLX+ZSb2kkLbwVqm1RLBMHAtiMW25hsbF8iOQ==",
+      "path": "microsoft.extensions.diagnostics.healthchecks.abstractions/6.0.7",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.abstractions.6.0.7.nupkg.sha512"
+    },
     "Microsoft.Extensions.FileProviders.Abstractions/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -6994,12 +7504,12 @@
       "path": "microsoft.extensions.filesystemglobbing/7.0.0",
       "hashPath": "microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Hosting.Abstractions/3.1.8": {
+    "Microsoft.Extensions.Hosting.Abstractions/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7ZJUKwPipkDvuv2KJPZ3r01wp2AWNMiYH+61i0dL89F7QICknjKpWgLKLpTSUYFgl77S3b4264I6i4HzDdrb2A==",
-      "path": "microsoft.extensions.hosting.abstractions/3.1.8",
-      "hashPath": "microsoft.extensions.hosting.abstractions.3.1.8.nupkg.sha512"
+      "sha512": "sha512-GcT5l2CYXL6Sa27KCSh0TixsRfADUgth+ojQSD5EkzisZxmGFh7CwzkcYuGwvmXLjr27uWRNrJ2vuuEjMhU05Q==",
+      "path": "microsoft.extensions.hosting.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Identity.Core/7.0.1": {
       "type": "package",
@@ -7414,6 +7924,13 @@
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
     },
+    "runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
+      "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
     "runtime.native.System.IO.Compression/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -7497,6 +8014,27 @@
       "sha512": "sha512-VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
+      "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
+      "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
+      "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
     "SendGrid/9.28.1": {
       "type": "package",
@@ -7588,6 +8126,20 @@
       "sha512": "sha512-2lT5X1r3GH4P0bRWJfhA7etGl8Q2Ipw9AACvtAHWRUSpYZ42NGVyHoVs2ALBZ/cAkkS+tA4jl80Zie144eLQPg==",
       "path": "serilog.sinks.rollingfile/3.3.0",
       "hashPath": "serilog.sinks.rollingfile.3.3.0.nupkg.sha512"
+    },
+    "Serilog.UI/2.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tADb39RUfxoHs3oIH/cj6Xcf2OVUKjyiGN4B/i9duo4A4XNHjWaHiAxcSdIwbxgv705B9o19A/o+kXuICRFmiQ==",
+      "path": "serilog.ui/2.2.3",
+      "hashPath": "serilog.ui.2.2.3.nupkg.sha512"
+    },
+    "Serilog.UI.MsSqlServerProvider/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NhNpD4v1Z3Zxy6OqKgSeni6M0XFQwmj//FtWzeI5qsMa4ZuQ3yVBbG58MHpb0oij51wZMppKCTZ71yHdmDavsA==",
+      "path": "serilog.ui.mssqlserverprovider/2.1.2",
+      "hashPath": "serilog.ui.mssqlserverprovider.2.1.2.nupkg.sha512"
     },
     "starkbank-ecdsa/1.3.3": {
       "type": "package",
@@ -7735,6 +8287,13 @@
       "sha512": "sha512-221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
       "path": "system.data.datasetextensions/4.5.0",
       "hashPath": "system.data.datasetextensions.4.5.0.nupkg.sha512"
+    },
+    "System.Data.SqlClient/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fxb9ghn1k1Ua7FFdlvtiBOD4/PsQvD/fk2KnhS+FK7VC6OggEx6P+lP1P0+KMb5V2dqS1+FbR7HCenoqzJMNIA==",
+      "path": "system.data.sqlclient/4.4.0",
+      "hashPath": "system.data.sqlclient.4.4.0.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
@@ -7967,12 +8526,12 @@
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.Emit.Lightweight/4.3.0": {
+    "System.Reflection.Emit.Lightweight/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
-      "path": "system.reflection.emit.lightweight/4.3.0",
-      "hashPath": "system.reflection.emit.lightweight.4.3.0.nupkg.sha512"
+      "sha512": "sha512-a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
+      "path": "system.reflection.emit.lightweight/4.7.0",
+      "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
     },
     "System.Reflection.Extensions/4.3.0": {
       "type": "package",
@@ -8897,12 +9456,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/7.0.0.0": {
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Diagnostics.HealthChecks/7.0.0.0": {
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

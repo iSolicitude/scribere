@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace KOM.Scribere.Data.Models;
 
 using System;
@@ -14,14 +16,22 @@ public class Post : BaseDeletableModel<string>
 {
     public Post()
     {
-        this.Id = Guid.NewGuid().ToString(DateTime.UtcNow.Ticks.ToString(CultureInfo.InvariantCulture));
+        this.Id = Guid.NewGuid().ToString();
+        this.Comments = new HashSet<Comment>();
+        this.Tags = new List<string>();
+        this.Categories = new List<string>();
+        this.PublishDate = DateTimeOffset.UtcNow;
     }
 
-    public IList<string> Categories { get; } = new List<string>();
+    [NotMapped]
+    public IList<string> Categories { get; set; }
 
-    public IList<string> Tags { get; } = new List<string>();
+    [NotMapped]
+    public IList<string> Tags { get; set; }
 
-    public IList<Comment> Comments { get; } = new List<Comment>();
+    public ICollection<Comment> Comments { get; }
+
+    public PostType Type { get; set; }
 
     [Required]
     [DataType(DataType.Html)]
@@ -30,25 +40,34 @@ public class Post : BaseDeletableModel<string>
     public string Content { get; set; } = string.Empty;
 
     [Required]
+    [DataType(DataType.Url)]
     [Display(Name = "Cover Photo")]
-    public string Url { get; set; }
+    public string ImageUrl { get; set; }
 
-    public bool IsPublic { get; set; }
+    [DataType(DataType.Url)]
+    [Display(Name = "Video")]
+    public string VideoUrl { get; set; }
+
+    [Display(Name = "Image/Video url")]
+    [DataType(DataType.Url)]
+    public string Url { get; set; }
 
     [Required]
     [DataType(DataType.Html)]
-    [Display(Name = "Short Content")]
+    [Display(Name = "Description/Short Content")]
     [MinLength(10, ErrorMessage = "The {0} must be at least {1} characters long.")]
     public string Excerpt { get; set; } = string.Empty;
 
     public bool IsPublished { get; set; } = true;
 
-    public DateTimeOffset PublishDate { get; set; } = DateTimeOffset.UtcNow;
+    public DateTimeOffset PublishDate { get; set; }
 
     [DisplayFormat(ConvertEmptyStringToNull = false)]
     public string Slug { get; set; } = string.Empty;
 
     public bool IsAchived { get; set; } = false;
+
+    public bool IsPinned { get; set; }
 
     [Required]
     [Display(Name = "Title")]

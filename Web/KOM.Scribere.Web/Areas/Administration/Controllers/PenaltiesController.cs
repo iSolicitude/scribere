@@ -7,7 +7,7 @@ using KOM.Scribere.Services.Data.UserPenalties;
 using KOM.Scribere.Web.ViewModels.UserPenalties;
 using Microsoft.AspNetCore.Mvc;
 
-public class PenaltiesController : AdministrationController
+public class PenaltiesController : AdministrationController<PenaltiesController>
 {
     private readonly IUserPenaltiesService userPenaltiesService;
 

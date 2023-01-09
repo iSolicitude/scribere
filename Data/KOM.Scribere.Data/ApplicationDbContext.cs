@@ -30,6 +30,10 @@ public class ApplicationDbContext : IdentityDbContext<User, Role, string>
 
     public DbSet<Page> Pages { get; set; }
 
+    public DbSet<Feed> Feeds { get; set; }
+    
+    public DbSet<FeedItem> FeedItems { get; set; }
+
     public DbSet<Comment> Comments { get; set; }
 
     public DbSet<Subscriber> Subscribers { get; set; }

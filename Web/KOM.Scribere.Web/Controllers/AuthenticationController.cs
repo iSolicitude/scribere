@@ -24,8 +24,13 @@ public class AuthenticationController : BaseController
     private readonly Post cartService;
     private readonly Random random;
 
-    public AuthenticationController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager,
-        IDeletableEntityRepository<User> usersRepository, ILogger<AuthenticationController> logger, Post cartService)
+    public AuthenticationController(
+        UserManager<User> userManager,
+        SignInManager<User> signInManager,
+        RoleManager<Role> roleManager,
+        IDeletableEntityRepository<User> usersRepository,
+        ILogger<AuthenticationController> logger,
+        Post cartService)
     {
         this.userManager = userManager;
         this.signInManager = signInManager;

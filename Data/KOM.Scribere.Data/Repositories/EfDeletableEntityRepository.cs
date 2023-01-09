@@ -1,14 +1,12 @@
-﻿using KOM.Scribere.Data.Common.Repositories;
-
-namespace KOM.Scribere.Data.Repositories;
+﻿namespace KOM.Scribere.Data.Repositories;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-using KingsOfMarketing.iShopper.Data.Common.Repositories;
 using KOM.Scribere.Data.Common.Models;
+using KOM.Scribere.Data.Common.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 public class EfDeletableEntityRepository<TEntity> : EfRepository<TEntity>, IDeletableEntityRepository<TEntity>
@@ -65,3 +63,5 @@ public class EfDeletableEntityRepository<TEntity> : EfRepository<TEntity>, IDele
         }
     }
 }
+
+

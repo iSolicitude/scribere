@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 using KOM.Scribere.Data.Common.Models;
 
-public class Page : BaseDeletableModel<string>
+public class Page : BaseDeletableModel<int>
 {
     public string Title { get; set; }
 

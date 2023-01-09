@@ -2,19 +2,14 @@
 @using KOM.Scribere.Data.Models
 @using Microsoft.AspNetCore.Identity
 @using Microsoft.AspNetCore.Mvc.TagHelpers
-@using System.Security.Claims
-@using iSolicitude.Web.Helpers
+@using KOM.Scribere.Web.Helpers
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
 
 <ul class="navbar-nav">
     @if (this.SignInManager.IsSignedIn(this.User))
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="Index" 
-               asp-route-userId="@this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value" 
-               title="Profile">Hello @this.User.Identity?.Name!</a>
-        </li>
+
         if (this.User.IsInRole(GlobalConstants.AdministratorRoleName))
         {
             <li class="nav-item">

@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿namespace KOM.Scribere.Web.ViewModels.Users;
 
-namespace KOM.Scribere.Web.ViewModels.Users;
+using System.Collections.Generic;
 
 public class AllUsersViewModel
 {

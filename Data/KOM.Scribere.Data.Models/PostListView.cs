@@ -6,5 +6,5 @@ public enum PostListView
 
     TitlesAndExcerpts,
 
-    FullPosts
+    FullPosts,
 }

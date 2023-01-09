@@ -1,0 +1,56 @@
+﻿@model IEnumerable<KOM.Scribere.Data.Models.Post>
+
+@{
+    ViewData["Title"] = "Blog Posts";
+    ViewData["SelectedMenuItem"] = "Posts";
+}
+<div>
+    <a asp-action="Edit" class="btn btn-primary d-print-none"><i class="fa fa-file" aria-hidden="true"></i>
+        New Post</a>
+    <br class="d-print-none" />
+    <br class="d-print-none" />
+</div>
+@if(Model.Count() > 0)
+{
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped table-sm">
+        <colgroup>
+            <col />
+            <col style="width: 220px;" />
+            <col style="width: 170px;" />
+            <col style="width: 170px;" />
+            <col style="width: 70px;" />
+        </colgroup>
+        <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.First().Title)</th>
+            <th>@Html.DisplayNameFor(model => model.First().Comments)</th>
+            <th>@Html.DisplayNameFor(model => model.First().PublishDate)</th>
+            <th>@Html.DisplayNameFor(model => model.First().ModifiedOn)</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td href="~/Post/@item.Slug/Edit">@Html.DisplayFor(modelItem => item.Title)</td>
+                <td>@Html.DisplayFor(modelItem => item.Comments.Count())</td>
+                <td>@Html.DisplayFor(modelItem => item.PublishDate.DateTime.ToShortDateString())</td>
+                <td>@Html.DisplayFor(modelItem => item.ModifiedOn.ToShortDateString())</td>
+                <td class="text-right d-print-none">
+                    <a href="~/Post/@item.Slug" title="Edit"><i class="fa fa-globe"></i></a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="DeletePost" asp-route-id="@item.Id" title="Delete" class="confirmdelete" 
+                       data-confirmmessage="Really delete blog entry?"><i class="fa fa-trash text-danger"></i></a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+}
+else
+{
+    <p>No post found</p>;
+}

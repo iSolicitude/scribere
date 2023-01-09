@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿namespace KOM.Scribere.Web.ViewModels.UserPenalties;
 
-namespace KOM.Scribere.Web.ViewModels.UserPenalties;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 public class UserPenaltiesInputModel
 {

@@ -1,4 +1,4 @@
-﻿namespace KingsOfMarketing.iShopper.Web.Helpers;
+﻿namespace KOM.Scribere.Web.Helpers;
 
 using System;
 using System.Collections.Generic;

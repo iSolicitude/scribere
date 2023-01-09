@@ -21,6 +21,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.netanalyzers\7.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.netanalyzers\7.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\7.0.1\build\Microsoft.AspNetCore.Identity.UI.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\7.0.1\build\Microsoft.AspNetCore.Identity.UI.props')" />
     <Import Project="$(NuGetPackageRoot)ligershark.weboptimizer.core\3.0.372\build\LigerShark.WebOptimizer.Core.props" Condition="Exists('$(NuGetPackageRoot)ligershark.weboptimizer.core\3.0.372\build\LigerShark.WebOptimizer.Core.props')" />
+    <Import Project="$(NuGetPackageRoot)aspnetcorehero.toastnotification\1.1.0\buildTransitive\AspNetCoreHero.ToastNotification.props" Condition="Exists('$(NuGetPackageRoot)aspnetcorehero.toastnotification\1.1.0\buildTransitive\AspNetCoreHero.ToastNotification.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\DomornieNelson\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
@@ -32,6 +33,7 @@
     <PkgMicrosoft_ClearScript_V8_Native_win-x86 Condition=" '$(PkgMicrosoft_ClearScript_V8_Native_win-x86)' == '' ">C:\Users\DomornieNelson\.nuget\packages\microsoft.clearscript.v8.native.win-x86\7.3.1</PkgMicrosoft_ClearScript_V8_Native_win-x86>
     <PkgMicrosoft_ClearScript_V8_Native_win-x64 Condition=" '$(PkgMicrosoft_ClearScript_V8_Native_win-x64)' == '' ">C:\Users\DomornieNelson\.nuget\packages\microsoft.clearscript.v8.native.win-x64\7.3.1</PkgMicrosoft_ClearScript_V8_Native_win-x64>
     <PkgMicrosoft_ClearScript_V8_Native_win-arm64 Condition=" '$(PkgMicrosoft_ClearScript_V8_Native_win-arm64)' == '' ">C:\Users\DomornieNelson\.nuget\packages\microsoft.clearscript.v8.native.win-arm64\7.3.1</PkgMicrosoft_ClearScript_V8_Native_win-arm64>
+    <PkgHangfire_SqlServer Condition=" '$(PkgHangfire_SqlServer)' == '' ">C:\Users\DomornieNelson\.nuget\packages\hangfire.sqlserver\1.7.32</PkgHangfire_SqlServer>
     <PkgBuildBundlerMinifier Condition=" '$(PkgBuildBundlerMinifier)' == '' ">C:\Users\DomornieNelson\.nuget\packages\buildbundlerminifier\3.2.449</PkgBuildBundlerMinifier>
   </PropertyGroup>
 </Project>

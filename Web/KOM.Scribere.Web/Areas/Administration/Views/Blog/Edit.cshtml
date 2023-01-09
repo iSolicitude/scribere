@@ -1,0 +1,221 @@
+@using KOM.Scribere.Common
+@model KOM.Scribere.Data.Models.Post
+@{
+  var isNew = string.IsNullOrEmpty(Model.Title);
+  ViewData[GlobalConstants.Title] = "Edit " + (Model.Title ?? "new post");
+  var host = Context.Request.Host.ToString();
+  bool existingEntry = !string.IsNullOrWhiteSpace(Model.Title);
+  var allCats = ViewData[GlobalConstants.AllCats] as List<string> ?? new List<string>();
+  var allTags = ViewData[GlobalConstants.AllTags] as List<string> ?? new List<string>();
+  
+}
+
+<!-- Main content -->
+<section class="content">
+  <form method="post" id="edit" class="container" asp-area="Administration" asp-controller="Blog" asp-action="UpdatePost">
+    <div asp-validation-summary="All"></div>
+    <input type="hidden" asp-for="@Model.Id"/>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">General</h3>
+          </div>
+          <div class="card-body">                      
+            <div class="row form-group pb-3">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="col-form-label" asp-for="Title"></label>
+                  @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                  <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="col-form-label" asp-for="Slug"></label>
+                  @Html.EditorFor(model => model.Slug, new { htmlAttributes = new { @class = "form-control" } })
+                  <span asp-validation-for="Slug" class="text-danger"></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label asp-for="Excerpt" class="control-label col-md-2"></label>
+              <div class="lg-md-12">
+                @Html.EditorFor(model => model.Excerpt, new { htmlAttributes = new { @class = "form-control" } })
+                <span asp-validation-for="Excerpt" class="text-danger"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label asp-for="Content" class="control-label col-md-2"></label>
+              <div class="col-lg-12">
+                @Html.EditorFor(model => model.Content, new { htmlAttributes = new { @class = "form-control" } })
+                <span asp-validation-for="Content" class="text-danger"></span>
+              </div>
+            </div>
+            <div class="form-group row pb-3">
+              
+              <div class="col-lg-6">
+                <label for="tags-input" class="col-lg-3 control-label text-lg-end pt-2">Categories</label>
+                <input name="tags" id="tags-input" data-role="tagsinput" data-tag-class="badge badge-primary" class="form-control" value="@string.Join(", ", Model.Categories)" hidden/>
+                <datalist id="taglist">
+                  @foreach (var cat in allCats)
+                  {
+                    <option value="@cat"/>
+                  }
+                </datalist>
+
+                <p>
+                  Select <code>or build a comma separated list of keywords</code> to remove double the keyword.
+                </p>
+              </div>
+              
+              <div class="col-lg-6">
+                <label for="tags-input" class="col-lg-3 control-label text-lg-end pt-2">Tags</label>
+                <input name="tags" id="tags-input" data-role="tagsinput" data-tag-class="badge badge-primary" class="form-control" value="@string.Join(", ", Model.Tags)" hidden/>
+                <datalist id="taglist">
+                  @foreach (var tag in allTags)
+                  {
+                    <option value="@tag"/>
+                  }
+                </datalist>
+                <p>
+                  Select <code>or build a comma separated list of keywords</code> to remove double the keyword.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+      </div>
+      <div class="col-md-5">
+        <div class="card card-secondary">
+          <div class="card-header">
+            <div class="form-group">
+              <img id="imagePreview" src="#" alt="Image Preview" class="img-thumbnail">
+            </div>            
+          </div>        
+         
+          <div class="card-body">
+            <div class="form-group">
+              <div class="fileupload fileupload-new" data-provides="fileupload">
+                <label for="imageInput">Select Image</label>
+                <input asp-for="ImageUrl" type="file" id="imageInput" accept="image/*">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label asp-for="Type" class="control-label"></label>
+              @Html.EditorFor(x => x.Type)
+              <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+
+            <div class="switch switch-sm switch-dark">
+              <label for="inputEstimatedBudget">Publish Post</label>
+              <input asp-for="@Model.IsPublished" type="checkbox" name="switch" data-plugin-ios-switch checked="checked" />
+            </div>			
+            <div class="switch switch-sm switch-dark">
+              <label for="inputEstimatedBudget">Pin Post</label>
+              <input asp-for="@Model.IsPinned" type="checkbox" name="switch" data-plugin-ios-switch checked="checked" />
+            </div>	
+            <div class="switch switch-sm switch-dark">
+              <label for="inputEstimatedBudget">Pin Post</label>
+              <input asp-for="@Model.IsAchived" type="checkbox" name="switch" data-plugin-ios-switch checked="checked" />
+            </div>									
+          </div>
+        </div>
+
+        @if (existingEntry)
+        {
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">Files</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>File Name</th>
+                  <th>File Size</th>
+                  <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>Functional-requirements.docx</td>
+                <td>49.8005 kb</td>
+                <td class="text-right py-0 align-middle">
+                  <div class="btn-group btn-group-sm">
+                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
+                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                  </div>
+                </td>
+                <tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+        }
+        <!-- /.card -->
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="#" id="clearButton" class="btn btn-secondary">Cancel</a>
+          <input type="submit" value="Save Changes" class="btn btn-success float-right">
+        </div>
+      </div></div>
+  </form>
+</section>
+
+@section Scripts
+{
+  <script>
+    // get the input and img elements
+    const imageInput = document.getElementById('imageInput');
+    const imagePreview = document.getElementById('imagePreview');
+  
+    // register an event listener for when the file input value changes
+    imageInput.addEventListener('change', function() {
+      const file = this.files[0];
+      if (file.type.match(/image.*/)) {
+        const reader = new FileReader();
+        reader.onload = function() {
+          imagePreview.src = this.result;
+        }
+        // read the file as a data URL
+        reader.readAsDataURL(file);
+      } else {
+        // show an error message
+        imagePreview.src = "#";
+        alert("Please select an image file.");
+      }
+    });
+  </script>
+  
+  <script>
+    // register an event listener for the clear button click
+    $("#clearButton").click(function() {
+      // reset the form
+      $("#edit")[0].reset();
+      // clear the input value
+      $("#title").val('');
+      $("#exerpt").val('');
+      $("#slug").val('');
+      $("#content").val('');
+      $("#publish").val('');
+      $("#pin").val('');
+      // remove all child elements from the container
+      $("#containerId").empty();
+    });
+  </script>
+}

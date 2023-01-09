@@ -6,5 +6,5 @@ public abstract class BaseDeletableModel<TKey> : BaseModel<TKey>, IDeletableEnti
 {
     public bool IsDeleted { get; set; }
 
-    public DateTimeOffset? DeletedOn { get; set; }
+    public DateTime? DeletedOn { get; set; }
 }

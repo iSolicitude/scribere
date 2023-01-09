@@ -1,4 +1,7 @@
-﻿namespace KOM.Scribere.Web.Controllers;
+﻿using KOM.Scribere.Data;
+using KOM.Scribere.Data.Common;
+
+namespace KOM.Scribere.Web.Controllers;
 
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -150,9 +153,7 @@ public class HomeController : BaseController
         return this.Redirect("/");
     }
 
-    [Route("/blog/edit/{id?}")]
-    [HttpGet, Authorize]
-
+    [AllowAnonymous]
     [Route("/{page:int?}")]
     [OutputCache(Profile = "default")]
     public async Task<IActionResult> Index([FromRoute]int page = 0)
@@ -240,9 +241,11 @@ public class HomeController : BaseController
                 post.Content = post.Content.Replace(match.Value, img.OuterXml, StringComparison.OrdinalIgnoreCase);
             }
         }
-        public IActionResult Privacy()
-        {
-            return this.View();
-        }
+
     }
+    
+    public IActionResult Privacy()
+             {
+                 return this.View();
+             }
 }

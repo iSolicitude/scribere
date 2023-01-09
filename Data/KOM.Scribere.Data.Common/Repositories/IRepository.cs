@@ -1,9 +1,9 @@
-﻿using System;
+﻿namespace KOM.Scribere.Data.Common.Repositories;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace KingsOfMarketing.iShopper.Data.Common.Repositories;
 
 public interface IRepository<TEntity> : IDisposable
     where TEntity : class

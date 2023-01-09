@@ -1,0 +1,54 @@
+@using KOM.Scribere.Common
+@using KOM.Scribere.Data.Models
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using KOM.Scribere.Web.Helpers
+@using System.Security.Claims
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+@if (this.SignInManager.IsSignedIn(this.User))
+{
+    <div id="userbox" class="userbox">
+        <a href="#" data-bs-toggle="dropdown">
+            <figure class="profile-picture">
+                <img src="img/!logged-user.jpg" alt="Joseph Doe" class="rounded-circle" data-lock-picture="img/!logged-user.jpg"/>
+            </figure>
+            <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+                <span class="name">Hello @User.Identity?.Name!</span>
+                @if (this.User.IsInRole(GlobalConstants.AdministratorRoleName))
+                {
+                    <span class="role">@GlobalConstants.AdministratorRoleName</span>
+                }
+                else
+                {
+                    <span class="role">@GlobalConstants.UserRoleName</span>
+                }
+            </div>
+
+
+            <i class="fa custom-caret"></i>
+        </a>
+
+        <div class="dropdown-menu">
+            <ul class="list-unstyled mb-2">
+                <li class="divider"></li>
+                <li>
+                    <a role="menuitem" tabindex="-1" asp-area="" asp-controller="Profile" asp-action="Index"
+                       asp-route-userId="@User.FindFirst(ClaimTypes.NameIdentifier)?.Value">
+                        <i class="bx bx-user-circle"></i> My Profile
+                    </a>
+                </li>
+                <li>
+                    <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="bx bx-lock"></i> Lock Screen</a>
+                </li>
+                <li>
+                    <a role="menuitem" tabindex="-1" asp-area="Identity" asp-page="/Account/Logout"
+                       asp-route-returnUrl="@Url.Action("Index", "Home", new { area = string.Empty })">
+                        <i class="bx bx-power-off"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+}

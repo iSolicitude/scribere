@@ -7,7 +7,6 @@
         <entry key="Common:dbContext" value="KOM.Scribere.Data.ApplicationDbContext" />
         <entry key="Common:noBuild" value="false" />
         <entry key="Common:outputFolder" value="Migrations" />
-        <entry key="Common:useDefaultConnection" value="true" />
       </map>
     </option>
   </component>

@@ -6,5 +6,5 @@ public interface IAuditInfo
 {
     DateTime CreatedOn { get; set; }
 
-    DateTimeOffset ModifiedOn { get; set; }
+    DateTime ModifiedOn { get; set; }
 }

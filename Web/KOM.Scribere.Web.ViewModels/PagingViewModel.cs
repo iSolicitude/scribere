@@ -22,5 +22,5 @@ public class PagingViewModel
     public string Search { get; set; }
 
     // /products/all
-    public ProductSorting Sorting { get; set; }
+    public PostSorting Sorting { get; set; }
 }

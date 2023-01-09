@@ -1,9 +1,8 @@
 ﻿namespace KOM.Scribere.Web.ViewModels.Settings;
 
+using AutoMapper;
 using KOM.Scribere.Data.Models;
 using KOM.Scribere.Services.Mapping;
-
-using AutoMapper;
 
 public class SettingViewModel : IMapFrom<Setting>, IHaveCustomMappings
 {

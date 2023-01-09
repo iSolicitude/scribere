@@ -1,0 +1,404 @@
+2023-01-04 10:06:11.401 -03:00 [Information] [] Starting application
+2023-01-04 10:06:11.503 -03:00 [Information] [Hangfire.BackgroundJobServer] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Scribere'
+2023-01-04 10:06:11.506 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-01-04 10:06:11.507 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for Hangfire Server:
+    Worker count: 2
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-01-04 10:06:13.004 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 successfully announced in 126.596 ms
+2023-01-04 10:06:13.008 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-01-04 10:06:13.020 -03:00 [Information] [Hangfire.Server.ServerWatchdog] 1 servers were removed due to timeout
+2023-01-04 10:06:13.046 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 all the dispatchers started
+2023-01-04 10:06:24.591 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 11812.6687 ms
+2023-01-04 10:06:25.419 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.1578 ms
+2023-01-04 10:06:25.853 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 425.3504 ms
+2023-01-04 10:06:26.250 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.1934 ms
+2023-01-04 10:06:26.274 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.4309 ms
+2023-01-04 10:06:27.731 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 6.9080 ms
+2023-01-04 10:06:42.073 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/login" responded 200 in 609.6763 ms
+2023-01-04 10:06:42.328 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0252 ms
+2023-01-04 10:06:42.434 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 106.0625 ms
+2023-01-04 10:06:42.458 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0264 ms
+2023-01-04 10:06:42.458 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0335 ms
+2023-01-04 10:06:42.561 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 103.3272 ms
+2023-01-04 10:06:42.672 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 214.2952 ms
+2023-01-04 10:06:43.823 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0247 ms
+2023-01-04 10:06:43.838 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 14.5081 ms
+2023-01-04 10:06:45.170 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.3649 ms
+2023-01-04 10:06:51.445 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/identity/account/login" responded 200 in 528.4287 ms
+2023-01-04 10:06:51.695 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0214 ms
+2023-01-04 10:06:51.695 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0214 ms
+2023-01-04 10:06:51.712 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 16.0972 ms
+2023-01-04 10:06:51.713 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.1825 ms
+2023-01-04 10:06:52.743 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0194 ms
+2023-01-04 10:06:52.752 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 9.1214 ms
+2023-01-04 10:06:54.147 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.8205 ms
+2023-01-04 10:26:36.678 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 caught stopping signal...
+2023-01-04 10:26:36.683 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 caught stopped signal...
+2023-01-04 10:26:37.223 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 All dispatchers stopped
+2023-01-04 10:26:37.235 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 successfully reported itself as stopped in 5.8465 ms
+2023-01-04 10:26:37.235 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:8720:3685afd4 has been stopped in total 556.0324 ms
+2023-01-04 10:26:37.246 -03:00 [Information] [] Stopped application
+2023-01-04 10:27:40.469 -03:00 [Information] [] Starting application
+2023-01-04 10:27:40.601 -03:00 [Information] [Hangfire.BackgroundJobServer] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Scribere'
+2023-01-04 10:27:40.605 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-01-04 10:27:40.605 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for Hangfire Server:
+    Worker count: 2
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-01-04 10:27:40.771 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:18188:86fc67fd successfully announced in 136.8768 ms
+2023-01-04 10:27:40.775 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:18188:86fc67fd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-01-04 10:27:40.800 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:18188:86fc67fd all the dispatchers started
+2023-01-04 10:27:57.799 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 15427.4425 ms
+2023-01-04 10:27:58.834 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0850 ms
+2023-01-04 10:27:59.603 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 760.3044 ms
+2023-01-04 10:28:00.838 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.2086 ms
+2023-01-04 10:28:00.853 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 11.7491 ms
+2023-01-04 10:28:02.087 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 5.8669 ms
+2023-01-04 10:28:07.217 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/login" responded 200 in 566.6753 ms
+2023-01-04 10:28:07.286 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/login" responded 200 in 36.5286 ms
+2023-01-04 10:28:07.582 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0530 ms
+2023-01-04 10:28:07.695 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 112.4244 ms
+2023-01-04 10:28:07.698 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0225 ms
+2023-01-04 10:28:07.716 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0244 ms
+2023-01-04 10:28:07.717 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.1785 ms
+2023-01-04 10:28:07.734 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 18.0425 ms
+2023-01-04 10:28:07.910 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0355 ms
+2023-01-04 10:28:07.929 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 18.6109 ms
+2023-01-04 10:28:07.949 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0499 ms
+2023-01-04 10:28:07.960 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 11.2969 ms
+2023-01-04 10:28:09.736 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0290 ms
+2023-01-04 10:28:09.749 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.7947 ms
+2023-01-04 10:28:09.794 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/identity/account/login" responded 200 in 63.1323 ms
+2023-01-04 10:28:09.837 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.6718 ms
+2023-01-04 10:28:10.034 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0233 ms
+2023-01-04 10:28:10.128 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 94.3775 ms
+2023-01-04 10:28:10.178 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0278 ms
+2023-01-04 10:28:10.197 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0281 ms
+2023-01-04 10:28:10.203 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 24.2175 ms
+2023-01-04 10:28:10.212 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.6419 ms
+2023-01-04 10:28:11.416 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0246 ms
+2023-01-04 10:28:11.431 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 14.6515 ms
+2023-01-04 10:28:12.630 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/identity/account/login" responded 200 in 711.5778 ms
+2023-01-04 10:28:12.691 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0330 ms
+2023-01-04 10:28:12.707 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 16.1138 ms
+2023-01-04 10:28:12.846 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.8404 ms
+2023-01-04 10:28:12.846 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0218 ms
+2023-01-04 10:28:12.875 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 28.4255 ms
+2023-01-04 10:28:13.767 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0169 ms
+2023-01-04 10:28:13.775 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 8.5755 ms
+2023-01-04 10:28:15.209 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.2636 ms
+2023-01-04 14:09:16.417 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:18188:86fc67fd caught stopping signal...
+2023-01-04 14:09:16.526 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:18188:86fc67fd caught stopped signal...
+2023-01-04 14:13:30.364 -03:00 [Information] [] Starting application
+2023-01-04 14:13:31.408 -03:00 [Information] [Hangfire.BackgroundJobServer] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Scribere'
+2023-01-04 14:13:31.412 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-01-04 14:13:31.413 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for Hangfire Server:
+    Worker count: 2
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-01-04 14:13:31.793 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de successfully announced in 348.3795 ms
+2023-01-04 14:13:31.801 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-01-04 14:13:31.817 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de all the dispatchers started
+2023-01-04 14:13:55.467 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 23629.2976 ms
+2023-01-04 14:14:06.034 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.1963 ms
+2023-01-04 14:14:07.528 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 1482.6902 ms
+2023-01-04 14:14:10.374 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.2462 ms
+2023-01-04 14:14:10.480 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 101.1602 ms
+2023-01-04 14:14:10.552 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 50.5478 ms
+2023-01-04 14:18:31.966 -03:00 [Information] [Hangfire.Server.ServerWatchdog] 1 servers were removed due to timeout
+2023-01-04 14:20:20.779 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/login" responded 200 in 904.2900 ms
+2023-01-04 14:20:20.906 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/login" responded 200 in 88.0092 ms
+2023-01-04 14:20:21.089 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0238 ms
+2023-01-04 14:20:21.133 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 43.7017 ms
+2023-01-04 14:20:21.352 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0386 ms
+2023-01-04 14:20:21.397 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 44.2803 ms
+2023-01-04 14:20:21.450 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0230 ms
+2023-01-04 14:20:21.534 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0282 ms
+2023-01-04 14:20:21.586 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0204 ms
+2023-01-04 14:20:21.624 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 173.4432 ms
+2023-01-04 14:20:21.634 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 46.7509 ms
+2023-01-04 14:20:21.758 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 223.4660 ms
+2023-01-04 14:20:23.572 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0209 ms
+2023-01-04 14:20:23.767 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 194.7935 ms
+2023-01-04 14:20:23.889 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/identity/account/login" responded 200 in 335.9617 ms
+2023-01-04 14:20:24.131 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.4094 ms
+2023-01-04 14:20:24.214 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0290 ms
+2023-01-04 14:20:24.215 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0233 ms
+2023-01-04 14:20:24.301 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 170.2487 ms
+2023-01-04 14:20:24.306 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 91.6517 ms
+2023-01-04 14:20:24.650 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 433.9101 ms
+2023-01-04 14:20:25.609 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0177 ms
+2023-01-04 14:20:25.629 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 20.0193 ms
+2023-01-04 14:20:26.051 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.4282 ms
+2023-01-04 14:20:31.450 -03:00 [Information] [KOM.Scribere.Web.Areas.Identity.Pages.Account.LoginModel] User logged in.
+2023-01-04 14:20:31.470 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/identity/account/login" responded 302 in 4225.3723 ms
+2023-01-04 14:20:31.565 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 71.3260 ms
+2023-01-04 14:20:36.111 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0287 ms
+2023-01-04 14:20:36.140 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 28.0765 ms
+2023-01-04 14:20:36.193 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.1079 ms
+2023-01-04 14:20:46.988 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire" responded 200 in 1191.1296 ms
+2023-01-04 14:20:47.429 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 173.4674 ms
+2023-01-04 14:20:47.539 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 283.7089 ms
+2023-01-04 14:20:47.625 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 1.6934 ms
+2023-01-04 14:20:51.648 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.7196 ms
+2023-01-04 14:20:52.213 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 565.2983 ms
+2023-01-04 14:20:57.631 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 799.2521 ms
+2023-01-04 14:21:00.078 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 348.6139 ms
+2023-01-04 14:21:02.211 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 23.4963 ms
+2023-01-04 14:21:06.128 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire" responded 200 in 733.9832 ms
+2023-01-04 14:21:06.129 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 734.4445 ms
+2023-01-04 14:21:25.609 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 3.5577 ms
+2023-01-04 14:21:25.617 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 8.9910 ms
+2023-01-04 14:21:25.664 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 0.7199 ms
+2023-01-04 14:21:32.001 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.6396 ms
+2023-01-04 14:21:33.362 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 1365.8801 ms
+2023-01-04 14:21:33.719 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/recurring" responded 200 in 1721.2916 ms
+2023-01-04 14:21:34.185 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 6.4619 ms
+2023-01-04 14:21:34.202 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 22.9060 ms
+2023-01-04 14:21:34.216 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 0.5753 ms
+2023-01-04 14:21:36.217 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.7288 ms
+2023-01-04 14:21:36.673 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 217.7921 ms
+2023-01-04 14:21:38.852 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 40.7335 ms
+2023-01-04 14:21:41.112 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 187.2886 ms
+2023-01-04 14:21:43.264 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 34.2850 ms
+2023-01-04 14:21:45.604 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 42.8200 ms
+2023-01-04 14:21:46.177 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/servers" responded 200 in 598.5969 ms
+2023-01-04 14:21:46.698 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 2.1532 ms
+2023-01-04 14:21:46.708 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 12.0116 ms
+2023-01-04 14:21:46.745 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 0.5904 ms
+2023-01-04 14:21:48.554 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.6420 ms
+2023-01-04 14:21:49.024 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 191.1546 ms
+2023-01-04 14:21:51.229 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 21.9252 ms
+2023-01-04 14:21:53.427 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 40.6346 ms
+2023-01-04 14:21:55.173 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/jobs/enqueued/default" responded 200 in 221.2445 ms
+2023-01-04 14:21:55.819 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 1.7443 ms
+2023-01-04 14:21:55.830 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 13.5504 ms
+2023-01-04 14:21:55.854 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 0.7415 ms
+2023-01-04 14:21:57.582 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5689 ms
+2023-01-04 14:21:58.317 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 363.7562 ms
+2023-01-04 14:22:00.097 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/jobs/succeeded" responded 200 in 596.0729 ms
+2023-01-04 14:22:00.205 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 2.1610 ms
+2023-01-04 14:22:00.212 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 8.9870 ms
+2023-01-04 14:22:00.261 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 0.5127 ms
+2023-01-04 14:22:02.070 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.6252 ms
+2023-01-04 14:22:02.405 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 35.1110 ms
+2023-01-04 14:22:04.631 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 90.7212 ms
+2023-01-04 14:22:06.982 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 173.5491 ms
+2023-01-04 14:22:08.421 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire" responded 200 in 198.5162 ms
+2023-01-04 14:22:08.482 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 1.6534 ms
+2023-01-04 14:22:08.498 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 16.4362 ms
+2023-01-04 14:22:08.562 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 0.6958 ms
+2023-01-04 14:22:11.193 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.4147 ms
+2023-01-04 14:22:11.596 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/" responded 200 in 271.3009 ms
+2023-01-04 14:22:11.596 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 404.4995 ms
+2023-01-04 14:22:11.666 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/css17320" responded 200 in 1.7716 ms
+2023-01-04 14:22:11.679 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/js17320" responded 200 in 13.2275 ms
+2023-01-04 14:22:11.736 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/hangfire/fonts/glyphicons-halflings-regular/woff2" responded 200 in 0.8021 ms
+2023-01-04 14:22:13.938 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.6966 ms
+2023-01-04 14:22:14.366 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/hangfire/stats" responded 200 in 417.3808 ms
+2023-01-04 14:22:18.737 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0292 ms
+2023-01-04 14:22:19.042 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 304.7626 ms
+2023-01-04 14:22:19.635 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.2809 ms
+2023-01-04 14:32:13.262 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages" responded 200 in 2411.5471 ms
+2023-01-04 14:32:13.977 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0300 ms
+2023-01-04 14:32:13.988 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 10.3228 ms
+2023-01-04 14:32:13.990 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0183 ms
+2023-01-04 14:32:13.998 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 7.5675 ms
+2023-01-04 14:32:14.503 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0277 ms
+2023-01-04 14:32:14.514 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 10.6484 ms
+2023-01-04 14:32:15.789 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0450 ms
+2023-01-04 14:32:15.811 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.0012 ms
+2023-01-04 14:32:16.655 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 5.0258 ms
+2023-01-04 14:32:17.435 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0174 ms
+2023-01-04 14:32:17.444 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 8.8108 ms
+2023-01-04 15:47:27.886 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages" responded 200 in 3038.7114 ms
+2023-01-04 15:47:28.449 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0242 ms
+2023-01-04 15:47:28.480 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 30.6936 ms
+2023-01-04 15:47:28.504 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0235 ms
+2023-01-04 15:47:28.506 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0228 ms
+2023-01-04 15:47:28.518 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.2202 ms
+2023-01-04 15:47:28.522 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 14.9018 ms
+2023-01-04 15:47:28.619 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0203 ms
+2023-01-04 15:47:28.633 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.2675 ms
+2023-01-04 15:47:31.895 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0234 ms
+2023-01-04 15:47:31.908 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.2646 ms
+2023-01-04 15:47:33.456 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5814 ms
+2023-01-04 15:47:46.485 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 6065.5291 ms
+2023-01-04 15:47:46.841 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0384 ms
+2023-01-04 15:47:47.224 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 383.5292 ms
+2023-01-04 15:47:47.272 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0357 ms
+2023-01-04 15:47:47.273 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0170 ms
+2023-01-04 15:47:47.282 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0251 ms
+2023-01-04 15:47:47.291 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.2475 ms
+2023-01-04 15:47:47.292 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.6662 ms
+2023-01-04 15:47:47.303 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 20.3700 ms
+2023-01-04 15:47:49.586 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0253 ms
+2023-01-04 15:47:49.598 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.0309 ms
+2023-01-04 15:47:51.518 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.6229 ms
+2023-01-04 15:48:54.445 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 1839.8379 ms
+2023-01-04 15:48:54.847 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0318 ms
+2023-01-04 15:48:54.871 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 24.3679 ms
+2023-01-04 15:48:54.887 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0261 ms
+2023-01-04 15:48:54.898 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0295 ms
+2023-01-04 15:48:54.912 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.3492 ms
+2023-01-04 15:48:54.915 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 16.2202 ms
+2023-01-04 15:48:54.939 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0255 ms
+2023-01-04 15:48:54.947 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 8.2331 ms
+2023-01-04 15:48:55.071 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0233 ms
+2023-01-04 15:48:55.082 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 10.6508 ms
+2023-01-04 15:48:56.600 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.7460 ms
+2023-01-04 15:49:20.306 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 542.7207 ms
+2023-01-04 15:49:20.822 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0288 ms
+2023-01-04 15:49:20.823 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0188 ms
+2023-01-04 15:49:20.823 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0124 ms
+2023-01-04 15:49:20.823 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0087 ms
+2023-01-04 15:49:20.835 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 11.0190 ms
+2023-01-04 15:49:20.839 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 16.0673 ms
+2023-01-04 15:49:20.852 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 28.6730 ms
+2023-01-04 15:49:20.866 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 43.5734 ms
+2023-01-04 15:49:21.206 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0203 ms
+2023-01-04 15:49:21.228 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 22.1343 ms
+2023-01-04 15:49:22.731 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5002 ms
+2023-01-04 15:49:49.202 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serilog-ui" responded 301 in 39.0492 ms
+2023-01-04 15:49:49.273 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serilog-ui/index.html" responded 200 in 36.6070 ms
+2023-01-04 15:49:49.717 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serilog-ui/fa-solid-900.6002b354.woff2" responded 200 in 88.9025 ms
+2023-01-04 15:49:51.048 -03:00 [Error] [Serilog.Ui.Web.SerilogUiMiddleware] Invalid object name 'dbo.Scribere Logs'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Scribere Logs'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 419
+   at Serilog.Ui.MsSqlServerProvider.SqlServerDataProvider.GetLogsAsync(Int32 page, Int32 count, String level, String searchCriteria, Nullable`1 startDate, Nullable`1 endDate)
+   at Serilog.Ui.MsSqlServerProvider.SqlServerDataProvider.FetchDataAsync(Int32 page, Int32 count, String logLevel, String searchCriteria, Nullable`1 startDate, Nullable`1 endDate)
+   at Serilog.Ui.Web.SerilogUiMiddleware.FetchLogsAsync(HttpContext httpContext)
+   at Serilog.Ui.Web.SerilogUiMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:dfeaeed8-6dc5-4347-95a9-0d05a3043aa9
+Error Number:208,State:1,Class:16
+2023-01-04 15:49:51.381 -03:00 [Error] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serilog-ui/api/logs" responded 500 in 1270.4657 ms
+2023-01-04 15:49:51.506 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5495 ms
+2023-01-04 15:49:56.666 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 1217.7822 ms
+2023-01-04 15:49:57.582 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0173 ms
+2023-01-04 15:49:57.596 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.1415 ms
+2023-01-04 15:49:58.290 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0260 ms
+2023-01-04 15:49:58.302 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 11.1643 ms
+2023-01-04 15:49:59.860 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5036 ms
+2023-01-04 15:50:01.451 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages" responded 200 in 14.0006 ms
+2023-01-04 15:50:02.283 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0219 ms
+2023-01-04 15:50:02.288 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0168 ms
+2023-01-04 15:50:02.288 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0102 ms
+2023-01-04 15:50:02.295 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0182 ms
+2023-01-04 15:50:02.301 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.8173 ms
+2023-01-04 15:50:02.302 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.2721 ms
+2023-01-04 15:50:02.306 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.1666 ms
+2023-01-04 15:50:02.314 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 18.8301 ms
+2023-01-04 15:50:03.389 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0163 ms
+2023-01-04 15:50:03.397 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 7.9706 ms
+2023-01-04 15:50:09.913 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages/create" responded 200 in 6431.5393 ms
+2023-01-04 15:50:10.005 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages/img/logo-light.png" responded 404 in 0.0327 ms
+2023-01-04 15:50:10.015 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 9.7833 ms
+2023-01-04 15:50:10.645 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages/img/!sample-user.jpg" responded 404 in 0.0397 ms
+2023-01-04 15:50:10.647 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages/img/!logged-user.jpg" responded 404 in 0.0199 ms
+2023-01-04 15:50:10.667 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 20.3108 ms
+2023-01-04 15:50:10.669 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 22.7370 ms
+2023-01-04 15:50:11.589 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/pages/img/!sample-user.jpg" responded 404 in 0.0201 ms
+2023-01-04 15:50:11.604 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.9750 ms
+2023-01-04 15:50:18.990 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0240 ms
+2023-01-04 15:50:18.999 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 9.0332 ms
+2023-01-04 15:50:20.421 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.8026 ms
+2023-01-04 15:50:29.337 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 20.0561 ms
+2023-01-04 15:50:29.625 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0210 ms
+2023-01-04 15:50:29.632 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0176 ms
+2023-01-04 15:50:29.654 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0236 ms
+2023-01-04 15:50:29.677 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 45.3083 ms
+2023-01-04 15:50:29.680 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.7427 ms
+2023-01-04 15:50:29.683 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 56.6886 ms
+2023-01-04 15:50:29.866 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0179 ms
+2023-01-04 15:50:29.880 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 14.1909 ms
+2023-01-04 15:50:31.437 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.4947 ms
+2023-01-04 15:50:31.944 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 837.0936 ms
+2023-01-04 15:50:32.290 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0203 ms
+2023-01-04 15:50:32.305 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0237 ms
+2023-01-04 15:50:32.306 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 16.2828 ms
+2023-01-04 15:50:32.342 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0211 ms
+2023-01-04 15:50:32.348 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0212 ms
+2023-01-04 15:50:32.356 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 51.0596 ms
+2023-01-04 15:50:32.360 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 11.7313 ms
+2023-01-04 15:50:32.363 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.0354 ms
+2023-01-04 15:50:33.179 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0273 ms
+2023-01-04 15:50:33.191 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.1656 ms
+2023-01-04 15:50:34.696 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.6912 ms
+2023-01-04 17:44:24.289 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 80.2815 ms
+2023-01-04 17:44:24.932 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0177 ms
+2023-01-04 17:44:24.979 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 46.7867 ms
+2023-01-04 17:44:24.996 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0182 ms
+2023-01-04 17:44:25.036 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 39.7167 ms
+2023-01-04 17:44:25.039 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0205 ms
+2023-01-04 17:44:25.084 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 45.5262 ms
+2023-01-04 17:44:25.114 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0195 ms
+2023-01-04 17:44:25.136 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 20.8600 ms
+2023-01-04 17:44:26.901 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0244 ms
+2023-01-04 17:44:26.917 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 15.7978 ms
+2023-01-04 17:44:28.316 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5833 ms
+2023-01-04 17:44:33.633 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 23.6746 ms
+2023-01-04 17:44:34.079 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0227 ms
+2023-01-04 17:44:34.085 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0197 ms
+2023-01-04 17:44:34.185 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 99.5913 ms
+2023-01-04 17:44:34.227 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 144.4809 ms
+2023-01-04 17:44:34.262 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0230 ms
+2023-01-04 17:44:34.281 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.3899 ms
+2023-01-04 17:44:34.298 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/background.jpg" responded 404 in 0.0204 ms
+2023-01-04 17:44:34.447 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 148.8486 ms
+2023-01-04 17:44:35.369 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0222 ms
+2023-01-04 17:44:35.411 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 41.9978 ms
+2023-01-04 17:44:37.622 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5558 ms
+2023-01-04 18:03:14.705 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de caught stopping signal...
+2023-01-04 18:03:14.729 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de caught stopped signal...
+2023-01-04 18:03:15.140 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de All dispatchers stopped
+2023-01-04 18:03:15.451 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de successfully reported itself as stopped in 38.7134 ms
+2023-01-04 18:03:15.451 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3828:64e1e7de has been stopped in total 738.1934 ms
+2023-01-04 18:03:15.458 -03:00 [Information] [] Stopped application
+2023-01-04 23:15:31.530 -03:00 [Information] [] Starting application
+2023-01-04 23:15:31.828 -03:00 [Information] [Hangfire.BackgroundJobServer] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Scribere'
+2023-01-04 23:15:31.833 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-01-04 23:15:31.833 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for Hangfire Server:
+    Worker count: 2
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-01-04 23:15:31.971 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df successfully announced in 30.7045 ms
+2023-01-04 23:15:31.974 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-01-04 23:15:31.989 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df all the dispatchers started
+2023-01-04 23:15:48.037 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 15542.6632 ms
+2023-01-04 23:15:52.708 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0806 ms
+2023-01-04 23:15:52.951 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 237.0049 ms
+2023-01-04 23:15:53.793 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 8.6076 ms
+2023-01-04 23:19:15.636 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 615.8037 ms
+2023-01-04 23:19:16.061 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0367 ms
+2023-01-04 23:19:16.070 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0281 ms
+2023-01-04 23:19:16.070 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0281 ms
+2023-01-04 23:19:16.079 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 8.6717 ms
+2023-01-04 23:19:16.079 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 8.8762 ms
+2023-01-04 23:19:16.081 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.4117 ms
+2023-01-04 23:19:16.430 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0334 ms
+2023-01-04 23:19:16.438 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 7.2896 ms
+2023-01-04 23:19:17.990 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.6944 ms
+2023-01-04 23:19:20.014 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 677.6652 ms
+2023-01-04 23:19:20.086 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0263 ms
+2023-01-04 23:19:20.096 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 9.5417 ms
+2023-01-04 23:19:20.244 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 8.5345 ms
+2023-01-04 23:19:20.260 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0209 ms
+2023-01-04 23:19:20.278 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.7977 ms
+2023-01-04 23:19:20.278 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 33.8019 ms
+2023-01-04 23:19:20.366 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0226 ms
+2023-01-04 23:19:20.374 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 7.8901 ms
+2023-01-04 23:19:21.474 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0290 ms
+2023-01-04 23:19:21.485 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 10.4761 ms
+2023-01-04 23:19:23.029 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.6692 ms

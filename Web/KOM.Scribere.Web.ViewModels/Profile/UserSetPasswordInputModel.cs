@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace KOM.Scribere.Web.ViewModels.Profile;
 
-namespace KOM.Scribere.Web.ViewModels.Profile;
+using System.ComponentModel.DataAnnotations;
 
 public class UserSetPasswordInputModel
 {

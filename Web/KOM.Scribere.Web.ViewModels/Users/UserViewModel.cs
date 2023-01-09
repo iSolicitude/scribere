@@ -1,8 +1,9 @@
-﻿using System;
+﻿namespace KOM.Scribere.Web.ViewModels.Users;
+
+using System;
+
 using KOM.Scribere.Data.Models;
 using KOM.Scribere.Services.Mapping;
-
-namespace KOM.Scribere.Web.ViewModels.Users;
 
 public class UserViewModel : IMapFrom<User>
 {

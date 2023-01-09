@@ -1,0 +1,8 @@
+﻿@model IEnumerable<KOM.Scribere.Web.ViewModels.Home.MenuItemViewModel>
+
+@foreach (var menuItem in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link text-light" href="/Pages/@menuItem.Permalink">@menuItem.Title</a>
+    </li>
+}

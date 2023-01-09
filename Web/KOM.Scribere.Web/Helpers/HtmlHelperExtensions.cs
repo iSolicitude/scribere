@@ -1,10 +1,11 @@
-﻿using System;
+﻿namespace KOM.Scribere.Web.Helpers;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace iSolicitude.Web.Helpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 public static class HtmlHelperExtensions
 {

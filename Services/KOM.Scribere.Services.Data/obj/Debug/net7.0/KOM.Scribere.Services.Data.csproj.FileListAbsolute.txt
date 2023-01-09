@@ -23,3 +23,5 @@ C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Serv
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\bin\Debug\net7.0\KOM.Scribere.Common.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\bin\Debug\net7.0\KOM.Scribere.Web.Infrastructure.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\bin\Debug\net7.0\KOM.Scribere.Web.Infrastructure.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\bin\Debug\net7.0\KOM.Scribere.Services.Messaging.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Services\KOM.Scribere.Services.Data\bin\Debug\net7.0\KOM.Scribere.Services.Messaging.pdb

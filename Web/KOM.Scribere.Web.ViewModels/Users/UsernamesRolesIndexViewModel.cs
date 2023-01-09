@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿namespace KOM.Scribere.Web.ViewModels.Users;
 
-namespace KOM.Scribere.Web.ViewModels.Users;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 public class UsernamesRolesIndexViewModel
 {

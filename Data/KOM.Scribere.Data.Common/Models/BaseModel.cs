@@ -10,5 +10,5 @@ public abstract class BaseModel<TKey> : IAuditInfo
 
     public DateTime CreatedOn { get; set; }
 
-    public DateTimeOffset ModifiedOn { get; set; }
+    public DateTime ModifiedOn { get; set; }
 }

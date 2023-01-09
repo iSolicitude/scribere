@@ -1,0 +1,29 @@
+@using KOM.Scribere.Common
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using KOM.Scribere.Web.Helpers
+@using KOM.Scribere.Web.Views.Shared.Components.Menu
+@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims
+@using KOM.Scribere.Web.Views.Shared.Components.Logo
+@using KOM.Scribere.Web.Views.Shared.Components.Search
+
+  @(await Component.InvokeAsync<LogoViewComponent>())
+  
+  <vc:menu></vc:menu>
+  
+  <div class="header-right">
+    @(await Component.InvokeAsync<SearchViewComponent>())
+    
+    <span class="separator"></span>
+    
+    <ul class="notifications">
+      <partial name="_NotificationBadgePartial"/>
+    </ul>
+    
+    <span class="separator"></span>
+  
+
+    @await Component.InvokeAsync("UserBox")
+</div>
+
+

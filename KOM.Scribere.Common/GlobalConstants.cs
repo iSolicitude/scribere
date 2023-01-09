@@ -8,6 +8,9 @@ public static class GlobalConstants
 
     public const string UserRoleName = "User";
 
+    public const string SiteKeywords = "Nikolay Kostov, Николай Костов, Nikolay.IT";
+    public const string SiteAuthor = "Nikolay Kostov (Nikolay.IT)";
+
     public const string TempDataErrorMessageKey = "ErrorMessage";
 
     public const string TempDataSuccessMessageKey = "SuccessMessage";

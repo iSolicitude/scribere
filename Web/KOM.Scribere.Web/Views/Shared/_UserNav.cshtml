@@ -1,0 +1,66 @@
+@using KOM.Scribere.Common
+@using KOM.Scribere.Data.Models
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using KOM.Scribere.Web.Helpers
+@using System.Security.Claims
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+@if (User.Identity.IsAuthenticated)
+{
+    <li class="nav-item dropdown user-menu">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            <img src="../../dist/img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image">
+            <span class="d-none d-md-inline">
+                <h1>Hello @User.Identity?.Name!"Hello, </h1>
+            </span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <!-- User image -->
+            <li class="user-header bg-primary">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+
+                @if (User.IsInRole(GlobalConstants.AdministratorRoleName))
+                {
+                    <p>
+                        @Model.FirstName @Model.LastName! - Admin
+                        <small>Member since Nov. 2012</small>
+                    </p>
+                }
+                else
+                {
+                    <p>
+                        @Model.FirstName @Model.LastName!
+                        <small>Member since @Model.CreatedOn.ToString("dd.MM.yyyy")</small>
+                    </p>
+                }
+            </li>
+
+            <!-- Menu Body -->
+            <li class="user-body">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <a href="#">Followers</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="#">Sales</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="#">Friends</a>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+                <a asp-area="" asp-controller="Profile" asp-action="Index"
+                   asp-route-userId="@User.FindFirst(ClaimTypes.NameIdentifier)?.Value"
+                   class="btn btn-default btn-flat">
+                    Profile
+                </a>
+                <a asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = string.Empty })"> class="btn btn-default btn-flat float-right">Sign out</a>
+            </li>
+        </ul>
+    </li>
+}

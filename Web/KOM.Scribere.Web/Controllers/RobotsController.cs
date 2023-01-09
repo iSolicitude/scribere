@@ -1,3 +1,6 @@
+using KOM.Scribere.Data;
+using KOM.Scribere.Data.Common;
+
 namespace KOM.Scribere.Web.Controllers;
 
 using System;
@@ -25,7 +28,10 @@ public class RobotsController : BaseController
 
     private readonly IOptionsSnapshot<BlogSettings> settings;
 
-    public RobotsController(IBlogService blog, IOptionsSnapshot<BlogSettings> settings, WebManifest manifest)
+    public RobotsController(
+        IBlogService blog,
+        IOptionsSnapshot<BlogSettings> settings,
+        WebManifest manifest)
     {
         this.blog = blog;
         this.settings = settings;

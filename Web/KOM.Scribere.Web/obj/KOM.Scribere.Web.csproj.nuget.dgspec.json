@@ -590,7 +590,17 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Common\\KOM.Scribere.Data.Common.csproj": {
+                "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Common\\KOM.Scribere.Data.Common.csproj"
+              },
+              "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data\\KOM.Scribere.Data.csproj": {
+                "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data\\KOM.Scribere.Data.csproj"
+              },
+              "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Data\\KOM.Scribere.Services.Data.csproj": {
+                "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Data\\KOM.Scribere.Services.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -603,6 +613,18 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.20.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
@@ -659,8 +681,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Models\\KOM.Scribere.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Data\\KOM.Scribere.Data.Models\\KOM.Scribere.Data.Models.csproj"
+              },
               "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\KOM.Scribere.Common\\KOM.Scribere.Common.csproj": {
                 "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\KOM.Scribere.Common\\KOM.Scribere.Common.csproj"
+              },
+              "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Messaging\\KOM.Scribere.Services.Messaging.csproj": {
+                "projectPath": "C:\\Users\\DomornieNelson\\Documents\\GitHub\\Scribere\\src\\Services\\KOM.Scribere.Services.Messaging\\KOM.Scribere.Services.Messaging.csproj"
               }
             }
           }
@@ -675,6 +703,34 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AngleSharp": {
+              "target": "Package",
+              "version": "[0.17.1, )"
+            },
+            "BlushingPenguin.JsonPath": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "CodeHollow.FeedReader": {
+              "target": "Package",
+              "version": "[1.2.4, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.32, )"
+            },
+            "Hangfire.Console": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.32, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.32, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -682,6 +738,10 @@
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "NUglify": {
+              "target": "Package",
+              "version": "[1.16.1, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -861,6 +921,26 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "AspNetCore.HealthChecks.UI.Core": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "AspNetCore.HealthChecks.UI.InMemory.Storage": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "AspNetCoreHero.ToastNotification": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "BuildBundlerMinifier": {
               "target": "Package",
               "version": "[3.2.449, )"
@@ -868,6 +948,22 @@
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.20.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.32, )"
+            },
+            "Hangfire.Console": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.32, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.32, )"
             },
             "LigerShark.WebOptimizer.Core": {
               "target": "Package",
@@ -958,6 +1054,14 @@
             "Serilog.Extensions.Logging.File": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Serilog.UI": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Serilog.UI.MsSqlServerProvider": {
+              "target": "Package",
+              "version": "[2.1.2, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",

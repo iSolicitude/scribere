@@ -1,0 +1,467 @@
+2023-01-09 01:34:50.210 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 1153.4841 ms
+2023-01-09 01:34:51.503 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0219 ms
+2023-01-09 01:34:51.547 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0221 ms
+2023-01-09 01:34:51.563 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0222 ms
+2023-01-09 01:34:51.589 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 85.4996 ms
+2023-01-09 01:34:51.591 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 30.0860 ms
+2023-01-09 01:34:51.609 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 44.4652 ms
+2023-01-09 01:34:51.649 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 36.4922 ms
+2023-01-09 01:34:52.325 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0223 ms
+2023-01-09 01:34:52.355 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 29.7973 ms
+2023-01-09 01:34:54.382 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0348 ms
+2023-01-09 01:34:54.423 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 41.3348 ms
+2023-01-09 01:34:56.091 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 8.8218 ms
+2023-01-09 01:36:46.801 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 941.0871 ms
+2023-01-09 01:36:47.645 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0200 ms
+2023-01-09 01:36:47.645 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0200 ms
+2023-01-09 01:36:47.645 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0201 ms
+2023-01-09 01:36:47.693 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 48.4684 ms
+2023-01-09 01:36:47.706 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 61.4651 ms
+2023-01-09 01:36:47.722 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 76.8216 ms
+2023-01-09 01:36:47.754 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 25.9277 ms
+2023-01-09 01:36:48.111 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0220 ms
+2023-01-09 01:36:48.142 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 23.5974 ms
+2023-01-09 01:36:49.887 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0206 ms
+2023-01-09 01:36:49.905 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 18.1277 ms
+2023-01-09 01:36:51.471 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 5.5837 ms
+2023-01-09 01:42:47.228 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 497.4505 ms
+2023-01-09 01:42:47.949 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0279 ms
+2023-01-09 01:42:47.980 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 31.1480 ms
+2023-01-09 01:42:47.995 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0205 ms
+2023-01-09 01:42:47.995 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0976 ms
+2023-01-09 01:42:48.025 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 22.7578 ms
+2023-01-09 01:42:48.025 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 22.8369 ms
+2023-01-09 01:42:48.117 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0343 ms
+2023-01-09 01:42:48.148 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 29.1583 ms
+2023-01-09 01:42:48.148 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 35.1789 ms
+2023-01-09 01:42:48.412 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0290 ms
+2023-01-09 01:42:48.457 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 45.5031 ms
+2023-01-09 01:42:50.072 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0261 ms
+2023-01-09 01:42:50.088 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 15.6585 ms
+2023-01-09 01:42:51.734 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 6.5151 ms
+2023-01-09 01:42:52.288 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 31.2610 ms
+2023-01-09 01:42:52.872 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0217 ms
+2023-01-09 01:42:52.886 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0194 ms
+2023-01-09 01:42:52.904 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0214 ms
+2023-01-09 01:42:52.910 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 37.0440 ms
+2023-01-09 01:42:52.918 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 31.8605 ms
+2023-01-09 01:42:52.930 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.4520 ms
+2023-01-09 01:42:52.977 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0672 ms
+2023-01-09 01:42:52.993 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 15.7108 ms
+2023-01-09 01:42:53.003 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 28.2258 ms
+2023-01-09 01:42:53.330 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0214 ms
+2023-01-09 01:42:53.361 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 30.7840 ms
+2023-01-09 01:42:54.940 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0950 ms
+2023-01-09 01:42:54.956 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 15.3025 ms
+2023-01-09 01:42:56.583 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.5006 ms
+2023-01-09 01:53:17.786 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3256:d5e0356f caught stopping signal...
+2023-01-09 01:53:17.862 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3256:d5e0356f caught stopped signal...
+2023-01-09 01:53:18.858 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3256:d5e0356f All dispatchers stopped
+2023-01-09 01:53:21.067 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3256:d5e0356f successfully reported itself as stopped in 2159.1455 ms
+2023-01-09 01:53:21.067 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:3256:d5e0356f has been stopped in total 3206.0093 ms
+2023-01-09 01:53:26.417 -03:00 [Information] [] Stopped application
+2023-01-09 02:20:45.084 -03:00 [Information] [] Starting application
+2023-01-09 02:20:47.197 -03:00 [Information] [Hangfire.BackgroundJobServer] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Scribere'
+2023-01-09 02:20:47.202 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-01-09 02:20:47.202 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for Hangfire Server:
+    Worker count: 2
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-01-09 02:20:47.822 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a successfully announced in 437.2207 ms
+2023-01-09 02:20:47.853 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-01-09 02:20:47.887 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a all the dispatchers started
+2023-01-09 02:22:44.939 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 112058.5311 ms
+2023-01-09 02:22:51.805 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.1644 ms
+2023-01-09 02:22:52.484 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 662.5723 ms
+2023-01-09 02:22:53.651 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 10.7056 ms
+2023-01-09 02:26:11.570 -03:00 [Information] [KOM.Scribere.Web.Areas.Administration.Controllers.BlogController] Displaying list of blog posts
+2023-01-09 02:26:12.391 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 853.1897 ms
+2023-01-09 02:26:13.340 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.2810 ms
+2023-01-09 02:26:13.352 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0282 ms
+2023-01-09 02:26:13.354 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0287 ms
+2023-01-09 02:26:13.373 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 24.0301 ms
+2023-01-09 02:26:13.374 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.5088 ms
+2023-01-09 02:26:13.380 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.9791 ms
+2023-01-09 02:26:14.014 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0228 ms
+2023-01-09 02:26:14.026 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 11.5508 ms
+2023-01-09 02:26:15.543 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.6118 ms
+2023-01-09 02:26:15.893 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 1223.9432 ms
+2023-01-09 02:26:16.530 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0281 ms
+2023-01-09 02:26:16.531 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0283 ms
+2023-01-09 02:26:16.540 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0262 ms
+2023-01-09 02:26:16.556 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 23.9222 ms
+2023-01-09 02:26:16.564 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 33.2896 ms
+2023-01-09 02:26:16.567 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 26.2929 ms
+2023-01-09 02:26:16.656 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0248 ms
+2023-01-09 02:26:16.675 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 18.8691 ms
+2023-01-09 02:26:16.760 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 101.2824 ms
+2023-01-09 02:26:16.970 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0215 ms
+2023-01-09 02:26:16.986 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 15.0210 ms
+2023-01-09 02:26:19.127 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0266 ms
+2023-01-09 02:26:19.149 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 20.8341 ms
+2023-01-09 02:26:20.787 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 3.2020 ms
+2023-01-09 02:28:22.571 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 1292.6029 ms
+2023-01-09 02:28:23.328 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0328 ms
+2023-01-09 02:28:23.332 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0332 ms
+2023-01-09 02:28:23.369 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0267 ms
+2023-01-09 02:28:23.376 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 47.9165 ms
+2023-01-09 02:28:23.376 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 36.3217 ms
+2023-01-09 02:28:23.401 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 30.6757 ms
+2023-01-09 02:28:23.430 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 21.0076 ms
+2023-01-09 02:28:23.798 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0262 ms
+2023-01-09 02:28:23.841 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 42.4928 ms
+2023-01-09 02:28:25.312 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0255 ms
+2023-01-09 02:28:25.325 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.3489 ms
+2023-01-09 02:28:26.870 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 10.3755 ms
+2023-01-09 02:28:52.434 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 469.0908 ms
+2023-01-09 02:28:53.316 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0365 ms
+2023-01-09 02:28:53.330 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0212 ms
+2023-01-09 02:28:53.341 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 24.2696 ms
+2023-01-09 02:28:53.349 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0207 ms
+2023-01-09 02:28:53.359 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.4873 ms
+2023-01-09 02:28:53.371 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.6979 ms
+2023-01-09 02:28:53.502 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0195 ms
+2023-01-09 02:28:53.536 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 34.2651 ms
+2023-01-09 02:28:53.536 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 33.6215 ms
+2023-01-09 02:28:53.870 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0233 ms
+2023-01-09 02:28:53.922 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 51.8851 ms
+2023-01-09 02:28:56.105 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0225 ms
+2023-01-09 02:28:56.118 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.7343 ms
+2023-01-09 02:28:57.763 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 13.3231 ms
+2023-01-09 02:31:02.874 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/blog" responded 200 in 319.0331 ms
+2023-01-09 02:31:03.865 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog" responded 404 in 20.4644 ms
+2023-01-09 02:31:03.887 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 22.2148 ms
+2023-01-09 02:31:04.173 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.1107 ms
+2023-01-09 02:31:04.203 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 30.3068 ms
+2023-01-09 02:31:05.764 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0244 ms
+2023-01-09 02:31:05.777 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.2621 ms
+2023-01-09 02:31:07.409 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.1160 ms
+2023-01-09 02:42:05.328 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a caught stopping signal...
+2023-01-09 02:42:05.337 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a caught stopped signal...
+2023-01-09 02:42:05.487 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a All dispatchers stopped
+2023-01-09 02:42:05.522 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a successfully reported itself as stopped in 31.7488 ms
+2023-01-09 02:42:05.522 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:12760:50722f3a has been stopped in total 190.9157 ms
+2023-01-09 02:42:05.530 -03:00 [Information] [] Stopped application
+2023-01-09 07:43:49.444 -03:00 [Information] [] Starting application
+2023-01-09 07:43:50.083 -03:00 [Information] [Hangfire.BackgroundJobServer] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Scribere'
+2023-01-09 07:43:50.089 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-01-09 07:43:50.089 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for Hangfire Server:
+    Worker count: 2
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-01-09 07:43:50.254 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:2800:5fbba46b successfully announced in 26.2044 ms
+2023-01-09 07:43:50.301 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:2800:5fbba46b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-01-09 07:43:50.398 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:2800:5fbba46b all the dispatchers started
+2023-01-09 07:44:13.809 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 23225.2113 ms
+2023-01-09 07:44:17.181 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.2382 ms
+2023-01-09 07:44:17.597 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 408.9783 ms
+2023-01-09 07:44:18.773 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 20.5220 ms
+2023-01-09 07:46:12.386 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/login" responded 200 in 621.0431 ms
+2023-01-09 07:46:13.180 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0276 ms
+2023-01-09 07:46:13.252 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 56.7314 ms
+2023-01-09 07:46:13.254 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0277 ms
+2023-01-09 07:46:13.285 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 27.0321 ms
+2023-01-09 07:46:15.132 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0269 ms
+2023-01-09 07:46:15.146 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.1708 ms
+2023-01-09 07:46:15.502 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 3.0126 ms
+2023-01-09 07:46:39.118 -03:00 [Information] [KOM.Scribere.Web.Areas.Identity.Pages.Account.LoginModel] User logged in.
+2023-01-09 07:46:39.136 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/identity/account/login" responded 302 in 1293.7835 ms
+2023-01-09 07:46:39.184 -03:00 [Information] [KOM.Scribere.Web.Areas.Administration.Controllers.BlogController] Displaying list of blog posts
+2023-01-09 07:46:39.539 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 382.5811 ms
+2023-01-09 07:46:40.442 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0289 ms
+2023-01-09 07:46:40.442 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0287 ms
+2023-01-09 07:46:40.464 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.5716 ms
+2023-01-09 07:46:40.464 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.5716 ms
+2023-01-09 07:46:40.466 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0311 ms
+2023-01-09 07:46:40.492 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.7429 ms
+2023-01-09 07:46:41.887 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0310 ms
+2023-01-09 07:46:41.925 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 37.5454 ms
+2023-01-09 07:46:42.677 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.9153 ms
+2023-01-09 07:46:44.839 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 1526.0564 ms
+2023-01-09 07:46:45.529 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0290 ms
+2023-01-09 07:46:45.539 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0376 ms
+2023-01-09 07:46:45.553 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 23.3758 ms
+2023-01-09 07:46:45.560 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0269 ms
+2023-01-09 07:46:45.562 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 22.3218 ms
+2023-01-09 07:46:45.629 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 68.7362 ms
+2023-01-09 07:46:45.725 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0190 ms
+2023-01-09 07:46:45.742 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 16.7159 ms
+2023-01-09 07:46:45.765 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 40.5925 ms
+2023-01-09 07:46:46.021 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0224 ms
+2023-01-09 07:46:46.038 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.4900 ms
+2023-01-09 07:46:48.103 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0539 ms
+2023-01-09 07:46:48.135 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 31.4818 ms
+2023-01-09 07:46:49.577 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.8261 ms
+2023-01-09 07:50:32.179 -03:00 [Error] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/blog" responded 500 in 252.5705 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at KOM.Scribere.Web.Areas.Administration.Controllers.BlogController.UpdatePost(Post post) in C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web\Areas\Administration\Controllers\BlogController.cs:line 233
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.Ui.Web.SerilogUiMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-01-09 07:50:32.252 -03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at KOM.Scribere.Web.Areas.Administration.Controllers.BlogController.UpdatePost(Post post) in C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web\Areas\Administration\Controllers\BlogController.cs:line 233
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.Ui.Web.SerilogUiMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebMarkupMin.AspNetCore7.WebMarkupMinMiddleware.InvokeCore(HttpContext context, Boolean useMinification, Boolean useCompression)
+   at WebMarkupMin.AspNetCore7.WebMarkupMinMiddleware.InvokeCore(HttpContext context, Boolean useMinification, Boolean useCompression)
+   at WebEssentials.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WilderMinds.MetaWeblog.MetaWeblogMiddleware.Invoke(HttpContext context, MetaWeblogService service)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-01-09 07:50:34.897 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.2001 ms
+2023-01-09 12:35:25.388 -03:00 [Information] [] Starting application
+2023-01-09 12:35:25.748 -03:00 [Information] [Hangfire.BackgroundJobServer] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Scribere'
+2023-01-09 12:35:25.753 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-01-09 12:35:25.754 -03:00 [Information] [Hangfire.BackgroundJobServer] Using the following options for Hangfire Server:
+    Worker count: 2
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-01-09 12:35:25.933 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 successfully announced in 132.2314 ms
+2023-01-09 12:35:26.031 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-01-09 12:35:26.039 -03:00 [Information] [Hangfire.Server.ServerWatchdog] 1 servers were removed due to timeout
+2023-01-09 12:35:26.044 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 all the dispatchers started
+2023-01-09 12:36:06.238 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/" responded 200 in 39972.7271 ms
+2023-01-09 12:37:19.402 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 103.0335 ms
+2023-01-09 12:37:29.285 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.5174 ms
+2023-01-09 12:37:29.843 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 549.2011 ms
+2023-01-09 12:38:07.812 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/login" responded 200 in 1288.6085 ms
+2023-01-09 12:38:11.143 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/logo-light.png" responded 404 in 0.0444 ms
+2023-01-09 12:38:11.176 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 24.6184 ms
+2023-01-09 12:38:11.589 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/identity/account/img/!sample-user.jpg" responded 404 in 0.0253 ms
+2023-01-09 12:38:11.609 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.2713 ms
+2023-01-09 12:38:14.192 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 2.4654 ms
+2023-01-09 12:38:15.217 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0242 ms
+2023-01-09 12:38:15.233 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 15.4035 ms
+2023-01-09 12:38:42.695 -03:00 [Information] [KOM.Scribere.Web.Areas.Identity.Pages.Account.LoginModel] User logged in.
+2023-01-09 12:38:42.720 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/identity/account/login" responded 302 in 3112.7507 ms
+2023-01-09 12:38:42.826 -03:00 [Information] [KOM.Scribere.Web.Areas.Administration.Controllers.BlogController] Displaying list of blog posts
+2023-01-09 12:38:43.574 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 796.4786 ms
+2023-01-09 12:38:44.700 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0323 ms
+2023-01-09 12:38:44.701 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0194 ms
+2023-01-09 12:38:44.700 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0323 ms
+2023-01-09 12:38:44.721 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.0498 ms
+2023-01-09 12:38:44.721 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.6111 ms
+2023-01-09 12:38:44.726 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.0912 ms
+2023-01-09 12:38:45.642 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0351 ms
+2023-01-09 12:38:45.673 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 30.2997 ms
+2023-01-09 12:38:47.035 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 2.1695 ms
+2023-01-09 12:39:03.943 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 1440.3467 ms
+2023-01-09 12:39:04.852 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0959 ms
+2023-01-09 12:39:04.853 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0174 ms
+2023-01-09 12:39:04.871 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0303 ms
+2023-01-09 12:39:04.886 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 32.4932 ms
+2023-01-09 12:39:04.896 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 43.3199 ms
+2023-01-09 12:39:04.906 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 34.9916 ms
+2023-01-09 12:39:05.098 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0329 ms
+2023-01-09 12:39:05.118 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.9801 ms
+2023-01-09 12:39:05.146 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 47.5802 ms
+2023-01-09 12:39:05.292 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0239 ms
+2023-01-09 12:39:05.333 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 40.4854 ms
+2023-01-09 12:39:07.711 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0270 ms
+2023-01-09 12:39:07.749 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 36.5329 ms
+2023-01-09 12:39:09.330 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.8269 ms
+2023-01-09 12:41:30.262 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/blog" responded 404 in 319.8722 ms
+2023-01-09 12:41:30.275 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/Shared/Error" responded 404 in 12.8991 ms
+2023-01-09 12:41:32.367 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0239 ms
+2023-01-09 12:41:32.386 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 19.0251 ms
+2023-01-09 12:41:33.839 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.7585 ms
+2023-01-09 12:41:45.351 -03:00 [Information] [KOM.Scribere.Web.Areas.Administration.Controllers.BlogController] Displaying list of blog posts
+2023-01-09 12:41:45.371 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 24.3831 ms
+2023-01-09 12:41:46.212 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0242 ms
+2023-01-09 12:41:46.212 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0242 ms
+2023-01-09 12:41:46.220 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0228 ms
+2023-01-09 12:41:46.233 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 20.2836 ms
+2023-01-09 12:41:46.239 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.1091 ms
+2023-01-09 12:41:46.250 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 29.3359 ms
+2023-01-09 12:41:46.899 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0196 ms
+2023-01-09 12:41:46.913 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.6336 ms
+2023-01-09 12:41:48.356 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.9793 ms
+2023-01-09 12:42:43.668 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 24.2047 ms
+2023-01-09 12:42:44.500 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0341 ms
+2023-01-09 12:42:44.503 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0280 ms
+2023-01-09 12:42:44.505 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0206 ms
+2023-01-09 12:42:44.553 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 51.9749 ms
+2023-01-09 12:42:44.553 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 50.1065 ms
+2023-01-09 12:42:44.558 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 53.0978 ms
+2023-01-09 12:42:44.704 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 41.5136 ms
+2023-01-09 12:42:45.182 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0240 ms
+2023-01-09 12:42:45.214 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 32.1726 ms
+2023-01-09 12:42:46.983 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0650 ms
+2023-01-09 12:42:47.005 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.6441 ms
+2023-01-09 12:42:48.556 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.6560 ms
+2023-01-09 12:44:29.136 -03:00 [Information] [KOM.Scribere.Web.Areas.Administration.Controllers.BlogController] Displaying list of blog posts
+2023-01-09 12:44:29.156 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 25.1917 ms
+2023-01-09 12:44:29.827 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0258 ms
+2023-01-09 12:44:29.833 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0241 ms
+2023-01-09 12:44:29.835 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0319 ms
+2023-01-09 12:44:29.900 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 64.7223 ms
+2023-01-09 12:44:29.918 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 90.6067 ms
+2023-01-09 12:44:29.922 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 89.5457 ms
+2023-01-09 12:44:32.835 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.8656 ms
+2023-01-09 12:44:32.845 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0276 ms
+2023-01-09 12:44:32.857 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 11.3689 ms
+2023-01-09 12:44:34.070 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/dashboard" responded 200 in 1234.9735 ms
+2023-01-09 12:44:36.181 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0215 ms
+2023-01-09 12:44:36.182 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0178 ms
+2023-01-09 12:44:36.219 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0266 ms
+2023-01-09 12:44:36.231 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 49.3416 ms
+2023-01-09 12:44:36.241 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 58.4283 ms
+2023-01-09 12:44:36.264 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 45.3707 ms
+2023-01-09 12:44:38.693 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0228 ms
+2023-01-09 12:44:38.703 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 9.3375 ms
+2023-01-09 12:44:39.349 -03:00 [Information] [KOM.Scribere.Web.Areas.Administration.Controllers.BlogController] Displaying list of blog posts
+2023-01-09 12:44:39.359 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/blog" responded 200 in 12.9087 ms
+2023-01-09 12:44:39.439 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/logo-light.png" responded 404 in 0.0257 ms
+2023-01-09 12:44:39.449 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 10.2030 ms
+2023-01-09 12:44:40.105 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!sample-user.jpg" responded 404 in 0.0214 ms
+2023-01-09 12:44:40.106 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.7838 ms
+2023-01-09 12:44:40.110 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/administration/img/!logged-user.jpg" responded 404 in 0.0122 ms
+2023-01-09 12:44:40.136 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 25.9911 ms
+2023-01-09 12:44:40.136 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 26.8603 ms
+2023-01-09 12:44:41.783 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0152 ms
+2023-01-09 12:44:41.793 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 9.7818 ms
+2023-01-09 12:44:43.377 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.4506 ms
+2023-01-09 12:44:44.783 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 23.3788 ms
+2023-01-09 12:44:46.631 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0496 ms
+2023-01-09 12:44:46.631 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!logged-user.jpg" responded 404 in 0.0628 ms
+2023-01-09 12:44:46.633 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/logo-light.png" responded 404 in 0.0426 ms
+2023-01-09 12:44:46.662 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 29.9471 ms
+2023-01-09 12:44:46.666 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 33.2415 ms
+2023-01-09 12:44:46.667 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 33.6506 ms
+2023-01-09 12:44:47.076 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/img/!sample-user.jpg" responded 404 in 0.0225 ms
+2023-01-09 12:44:47.085 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/blog/edit" responded 200 in 20.8190 ms
+2023-01-09 12:44:47.094 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 17.5518 ms
+2023-01-09 12:44:48.613 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/lib/tinymce/plugins/paste/plugin.min.js" responded 404 in 0.0409 ms
+2023-01-09 12:44:48.637 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 20.2603 ms
+2023-01-09 12:44:50.090 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0155 ms
+2023-01-09 12:44:50.103 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 13.1936 ms
+2023-01-09 12:44:51.746 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.9343 ms
+2023-01-09 12:48:02.236 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/blog" responded 404 in 2.7398 ms
+2023-01-09 12:48:02.252 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/Shared/Error" responded 404 in 16.4966 ms
+2023-01-09 12:48:04.792 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0237 ms
+2023-01-09 12:48:04.814 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 21.6016 ms
+2023-01-09 12:48:06.357 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.7861 ms
+2023-01-09 12:58:04.056 -03:00 [Error] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/notifications" responded 500 in 2326.4720 ms
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Operator '==' cannot be applied to operands of type 'Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString' and 'string'
+   at CallSite.Target(Closure, CallSite, Object, String)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at AspNetCore.Views_Shared__Layout.<>c__DisplayClass26_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web\Views\Shared\_Layout.cshtml:line 20
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Shared__Layout.ExecuteAsync() in C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web\Views\Shared\_Layout.cshtml:line 13
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.Ui.Web.SerilogUiMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-01-09 12:58:05.809 -03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Operator '==' cannot be applied to operands of type 'Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString' and 'string'
+   at CallSite.Target(Closure, CallSite, Object, String)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at AspNetCore.Views_Shared__Layout.<>c__DisplayClass26_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web\Views\Shared\_Layout.cshtml:line 20
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Shared__Layout.ExecuteAsync() in C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web\Views\Shared\_Layout.cshtml:line 13
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.Ui.Web.SerilogUiMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebMarkupMin.AspNetCore7.WebMarkupMinMiddleware.InvokeCore(HttpContext context, Boolean useMinification, Boolean useCompression)
+   at WebMarkupMin.AspNetCore7.WebMarkupMinMiddleware.InvokeCore(HttpContext context, Boolean useMinification, Boolean useCompression)
+   at WebEssentials.AspNetCore.OutputCaching.OutputCacheMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WilderMinds.MetaWeblog.MetaWeblogMiddleware.Invoke(HttpContext context, MetaWeblogService service)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-01-09 12:58:08.739 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.5532 ms
+2023-01-09 12:58:45.573 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0175 ms
+2023-01-09 12:58:45.585 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 12.2659 ms
+2023-01-09 12:58:47.118 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 0.6289 ms
+2023-01-09 12:58:53.107 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/blog" responded 404 in 2.1908 ms
+2023-01-09 12:58:53.120 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/Shared/Error" responded 404 in 12.9064 ms
+2023-01-09 12:58:59.834 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/img/icon192x192.png" responded 404 in 0.0156 ms
+2023-01-09 12:58:59.843 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/Shared/Error" responded 404 in 8.9449 ms
+2023-01-09 12:59:01.381 -03:00 [Information] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serviceworker" responded 200 in 1.6389 ms
+2023-01-09 13:12:01.711 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 caught stopping signal...
+2023-01-09 13:12:01.717 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 caught stopped signal...
+2023-01-09 13:12:02.746 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 All dispatchers stopped
+2023-01-09 13:12:02.753 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 successfully reported itself as stopped in 3.6184 ms
+2023-01-09 13:12:02.753 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:6344:a70a96e1 has been stopped in total 1040.3064 ms
+2023-01-09 13:12:02.764 -03:00 [Information] [] Stopped application

@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace KOM.Scribere.Web.ViewModels.Authentication;
 
-namespace KOM.Scribere.Web.ViewModels.Authentication;
+using System.ComponentModel.DataAnnotations;
 
 public class UserGitHubRegisterInputModel
 {

@@ -11,5 +11,4 @@ public class PersonalDataCommentsViewModel : IMapFrom<Comment>
     public DateTime CreatedOn { get; set; }
 
     public string Content { get; set; }
-
 }

@@ -4,6 +4,8 @@
 @using KOM.Scribere.Data.Models
 @using Microsoft.AspNetCore.Mvc.TagHelpers
 @using KOM.Scribere.Common
+@using KOM.Scribere.Data
+@using KOM.Scribere.Data.Common
 @model KOM.Scribere.Data.Models.Post
 @inject IOptionsSnapshot<BlogSettings> settings
 @{
@@ -24,7 +26,7 @@
         <time datetime="@Model.PublishDate.ToString("s")" itemprop="datePublished">Published @Model.PublishDate.ToString("MMM d, yyyy")</time>
         @if (User.Identity.IsAuthenticated)
         {
-            <a asp-area="Administration" asp-controller="AddUpdateBlog" asp-action="edit" asp-route-Id="@Model.Id" title="Edit the post">Edit post</a>
+            <a asp-area="Administration" asp-controller="Blog" asp-action="edit" asp-route-Id="@Model.Id" title="Edit the post">Edit post</a>
         }
     </header>
 
@@ -50,7 +52,7 @@
 			<ul class="categories">
 				@foreach (string cat in Model.Categories)
 				{
-					<li itemprop="articleSection"><a asp-controller="Blog" asp-action="Category" asp-route-category="@cat.ToLowerInvariant()" asp-route-page="">@cat</a></li>
+					<li itemprop="articleSection"><a asp-controller="Home" asp-action="Category" asp-route-category="@cat.ToLowerInvariant()" asp-route-page="">@cat</a></li>
 				}
 			</ul>
 		}
@@ -65,7 +67,7 @@
 			<ul class="tags">
 				@foreach (string tag in Model.Tags)
 				{
-					<li itemprop="articleSection"><a asp-controller="Blog" asp-action="Tag" asp-route-tag="@tag.ToLowerInvariant()" asp-route-page="">@tag</a></li>
+					<li itemprop="articleSection"><a asp-controller="Home" asp-action="Tag" asp-route-tag="@tag.ToLowerInvariant()" asp-route-page="">@tag</a></li>
 				}
 			</ul>
 		}

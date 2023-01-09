@@ -1,0 +1,17 @@
+2023-01-04 15:49:51.048 -03:00 [Error] [Serilog.Ui.Web.SerilogUiMiddleware] Invalid object name 'dbo.Scribere Logs'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Scribere Logs'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 419
+   at Serilog.Ui.MsSqlServerProvider.SqlServerDataProvider.GetLogsAsync(Int32 page, Int32 count, String level, String searchCriteria, Nullable`1 startDate, Nullable`1 endDate)
+   at Serilog.Ui.MsSqlServerProvider.SqlServerDataProvider.FetchDataAsync(Int32 page, Int32 count, String logLevel, String searchCriteria, Nullable`1 startDate, Nullable`1 endDate)
+   at Serilog.Ui.Web.SerilogUiMiddleware.FetchLogsAsync(HttpContext httpContext)
+   at Serilog.Ui.Web.SerilogUiMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:dfeaeed8-6dc5-4347-95a9-0d05a3043aa9
+Error Number:208,State:1,Class:16
+2023-01-04 15:49:51.381 -03:00 [Error] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/serilog-ui/api/logs" responded 500 in 1270.4657 ms

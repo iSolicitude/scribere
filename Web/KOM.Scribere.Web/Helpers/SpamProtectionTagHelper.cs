@@ -1,10 +1,11 @@
-﻿using System;
+﻿namespace KOM.Scribere.Web.Helpers;
+
+using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace iSolicitude.Web.Helpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 
 [HtmlTargetElement("form")]
 public class SpamProtectionTagHelper : TagHelper

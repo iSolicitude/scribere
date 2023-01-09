@@ -1,0 +1,53 @@
+2023-01-05 04:46:41.608 -03:00 [Warning] [Hangfire.Server.ServerHeartbeatProcess] Server isol-mgnt-3325:17504:f7c829df encountered an exception while sending heartbeat
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass19_0.<Heartbeat>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass35_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.Server.ServerHeartbeatProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:25a50a64-cd6c-4760-913c-aba41d9b2883
+Error Number:-2,State:0,Class:11
+2023-01-05 04:46:42.303 -03:00 [Warning] [Hangfire.Server.RecurringJobScheduler] Recurring job 'CheckFeedsJob' can't be scheduled due to an error and will be retried in 00:00:15.
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Dapper.SqlMapper.ExecuteScalarImpl[T](IDbConnection cnn, CommandDefinition& command)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass7_0.<CreateExpiredJob>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerConnection.CreateExpiredJob(Job job, IDictionary`2 parameters, DateTime createdAt, TimeSpan expireIn)
+   at Hangfire.Client.CoreBackgroundJobFactory.<>c__DisplayClass14_0.<Create>b__2(Int32 _)
+   at Hangfire.Client.CoreBackgroundJobFactory.RetryOnException[T](Int32& attemptsLeft, Func`2 action)
+--- End of stack trace from previous location ---
+   at Hangfire.Client.CoreBackgroundJobFactory.RetryOnException[T](Int32& attemptsLeft, Func`2 action)
+   at Hangfire.Client.CoreBackgroundJobFactory.Create(CreateContext context)
+   at Hangfire.Client.BackgroundJobFactory.<>c__DisplayClass12_0.<CreateWithFilters>b__0()
+   at Hangfire.Client.BackgroundJobFactory.InvokeClientFilter(IClientFilter filter, CreatingContext preContext, Func`1 continuation)
+   at Hangfire.Client.BackgroundJobFactory.Create(CreateContext context)
+   at Hangfire.RecurringJobExtensions.TriggerRecurringJob(IBackgroundJobFactory factory, JobStorage storage, IStorageConnection connection, IProfiler profiler, RecurringJobEntity recurringJob, DateTime now)
+   at Hangfire.Server.RecurringJobScheduler.ScheduleRecurringJob(BackgroundProcessContext context, IStorageConnection connection, String recurringJobId, RecurringJobEntity recurringJob, DateTime now)
+ClientConnectionId:6492f71f-b374-4e4d-821b-735c7e45a1d9
+Error Number:-2,State:0,Class:11
+2023-01-05 04:47:12.345 -03:00 [Information] [Hangfire.Server.ServerHeartbeatProcess] Server isol-mgnt-3325:17504:f7c829df is now able to continue sending heartbeats
+2023-01-05 06:15:43.791 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df caught stopping signal...
+2023-01-05 06:15:43.798 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df caught stopped signal...
+2023-01-05 06:15:43.905 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df All dispatchers stopped
+2023-01-05 06:15:43.923 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df successfully reported itself as stopped in 9.79 ms
+2023-01-05 06:15:43.923 -03:00 [Information] [Hangfire.Server.BackgroundServerProcess] Server isol-mgnt-3325:17504:f7c829df has been stopped in total 130.5738 ms
+2023-01-05 06:15:43.928 -03:00 [Information] [] Stopped application

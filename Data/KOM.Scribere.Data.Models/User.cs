@@ -77,12 +77,12 @@ public class User : IdentityUser, IAuditInfo, IDeletableEntity
     // Audit info
     public DateTime CreatedOn { get; set; }
 
-    public DateTimeOffset ModifiedOn { get; set; }
+    public DateTime ModifiedOn { get; set; }
 
     // Deletable entity
     public bool IsDeleted { get; set; }
 
-    public DateTimeOffset? DeletedOn { get; set; }
+    public DateTime? DeletedOn { get; set; }
 
     public virtual ICollection<IdentityUserRole<string>> Roles { get; set; }
 

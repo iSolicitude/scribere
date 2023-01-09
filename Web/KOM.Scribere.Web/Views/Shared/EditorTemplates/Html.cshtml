@@ -1,13 +1,15 @@
-﻿<script src="/lib/tinymce/js/tinymce/tinymce.min.js" type="text/javascript"></script>
+﻿<script src="~/lib/tinymce/tinymce.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     tinymce.init({
         selector: "textarea.edit-with-tinymce",
+        skin: 'oxide',
+        statusbar: false,
         relative_urls: false,
         remove_script_host : false,
         convert_urls : true,
-        plugins: [
-            "image paste table link code media fullscreen wordcount searchreplace lists"
-        ]
+        promotion: false,
+          plugins: 'image media quickbars paste autoresize autosave charmap pagebreak table link code emoticons media fullscreen nonbreaking wordcount searchreplace lists advlist autolink help',
+
     });
 </script>
 

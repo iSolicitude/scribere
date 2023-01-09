@@ -13,15 +13,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="0.17.1" />
+    <PackageReference Include="BlushingPenguin.JsonPath" Version="1.0.6" />
+    <PackageReference Include="CodeHollow.FeedReader" Version="1.2.4" />
+    <PackageReference Include="Hangfire" Version="1.7.32" />
+    <PackageReference Include="Hangfire.Console" Version="1.4.2" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.32" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.32" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="NUglify" Version="1.16.1" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\KOM.Scribere.Data.Models\KOM.Scribere.Data.Models.csproj" />
     <ProjectReference Include="..\..\KOM.Scribere.Common\KOM.Scribere.Common.csproj" />
+    <ProjectReference Include="..\..\Services\KOM.Scribere.Services.Messaging\KOM.Scribere.Services.Messaging.csproj" />
   </ItemGroup>
 
 </Project>

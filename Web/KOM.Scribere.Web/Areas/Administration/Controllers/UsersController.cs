@@ -7,7 +7,7 @@ using KOM.Scribere.Services.Data.Users;
 using KOM.Scribere.Web.ViewModels.Users;
 using Microsoft.AspNetCore.Mvc;
 
-public class UsersController : AdministrationController
+public class UsersController : AdministrationController<UsersController>
 {
     private readonly IUsersService usersService;
 

@@ -1,12 +1,18 @@
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Web.ViewModels.deps.json
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Web.ViewModels.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Web.ViewModels.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Common.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Data.Common.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Data.Models.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Services.Mapping.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Services.Messaging.dll
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Web.Infrastructure.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Data.Models.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Services.Mapping.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Web.Infrastructure.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Common.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Data.Common.pdb
+C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Services.Messaging.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\obj\Debug\net7.0\KOM.Scribere.Web.ViewModels.csproj.AssemblyReference.cache
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\obj\Debug\net7.0\KOM.Scribere.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\obj\Debug\net7.0\KOM.Scribere.Web.ViewModels.AssemblyInfoInputs.cache
@@ -17,7 +23,3 @@ C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewM
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\obj\Debug\net7.0\refint\KOM.Scribere.Web.ViewModels.dll
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\obj\Debug\net7.0\KOM.Scribere.Web.ViewModels.pdb
 C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\obj\Debug\net7.0\ref\KOM.Scribere.Web.ViewModels.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Common.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Web.Infrastructure.dll
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Web.Infrastructure.pdb
-C:\Users\DomornieNelson\Documents\GitHub\Scribere\src\Web\KOM.Scribere.Web.ViewModels\bin\Debug\net7.0\KOM.Scribere.Common.pdb
